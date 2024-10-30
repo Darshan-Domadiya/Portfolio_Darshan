@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu");
+
+// Each section's CSS.
+section {
+  padding-top: 80px; /* Adjust based on header height */
+  margin-top: -95px; /* Negative margin to cancel out the padding effect */
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px; /* Adjust to match your navbar height */
+  padding-bottom: 40px; /* Space at the bottom for breathing room */
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #010101;
+  color: white;
+}
+
+// Font style
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.landing-page {
+  min-height: 100vh;
+//   margin-top: 94px;
+}
