@@ -3,6 +3,19 @@
   width: 100%;
 }
 
-// .about-container {
-//   height: 100vh;
-// }
+//Tabs css.
+.custom-tabs .nav-link {
+  color: #003366;
+  font-weight: 500; /* Optional: make it slightly bolder */
+  transition: color 0.5s ease; /* Smooth transition for hover */
+
+  /* Hover effect */
+  &:hover {
+    color: darkcyan;
+  }
+}
+
+/* Active tab styling */
+.custom-tabs .nav-link.active {
+  font-weight: medium;
+}

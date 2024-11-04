@@ -6,6 +6,8 @@ import "./header.scss";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState("home");
+  const [isVisible, setIsVisible] = useState(true);
+  let lastScrollY = window.scrollY; // To track the last scroll position
 
   const handleSetActiveLink = (link) => {
     setActiveLink(link);
@@ -15,6 +17,13 @@ const Header = () => {
   const handleScroll = () => {
     const sections = ["home", "about", "skills", "projects", "contact"];
     const scrollPosition = window.scrollY;
+
+    if (scrollPosition > lastScrollY) {
+      setIsVisible(false); // Scrolling down
+    } else {
+      setIsVisible(true); // Scrolling up
+    }
+    lastScrollY = scrollPosition; // Update last scroll position
 
     sections.forEach((section) => {
       const sectionElement = document.getElementById(section);
@@ -45,16 +54,18 @@ const Header = () => {
   }, []);
 
   return (
-    <Container fluid className="">
+    <Container fluid className="text-center">
       <Navbar
         collapseOnSelect
         expand="lg"
         fixed="top"
-        className="custom-navbar"
+        className={`custom-navbar ${
+          isVisible ? "visible" : "hidden"
+        } mx-4 mx-md-5`}
       >
-        <Container>
-          <Navbar.Brand href="/" className="text-light">
-            Darshan Domadiya
+        <Container className="text-center">
+          <Navbar.Brand href="/" className=" navbar-logo">
+            DARSHAN
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

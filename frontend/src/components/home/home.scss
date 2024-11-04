@@ -4,15 +4,79 @@
 section {
   padding-top: 80px; /* Adjust based on header height */
   margin-top: -95px; /* Negative margin to cancel out the padding effect */
+  margin-bottom: 90px;
   min-height: 100vh;
-  flex-direction: column;
-  align-items: center;
   padding-top: 80px; /* Adjust to match your navbar height */
   padding-bottom: 40px; /* Space at the bottom for breathing room */
   box-sizing: border-box;
   overflow: hidden;
-  background-color: #010101;
+  background-color: #f0f8ff;
+  color: #002d62;
+}
+
+#contact {
+  margin-bottom: 0;
+}
+
+// Each section's css when it is loaded...
+.section {
+  opacity: 0; /* Start invisible */
+  transform: translateX(-100px); /* Start off-screen to the left */
+  transition: opacity 1s ease, transform 1s ease; /* Transition for smooth effect */
+}
+
+.section.visible {
+  opacity: 1; /* Fade in */
+  transform: translateX(0); /* Move into view */
+}
+
+// Each section heading css...
+.section-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #002d62;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.section-heading::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: #007cf0;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  animation: wave 2s infinite ease-in-out;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0.8);
+  }
+}
+
+// Button css
+.btn-style-landingPage {
+  background: #002d62;
   color: white;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.btn-style-landingPage:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  color: black;
+  background-color: #43a6c6;
+  transform: translateY(-3px);
 }
 
 // Font style
@@ -24,5 +88,97 @@ section {
 
 .landing-page {
   min-height: 100vh;
-//   margin-top: 94px;
+  //   margin-top: 94px;
+}
+
+.round-image-div {
+  height: auto;
+  width: 100%;
+}
+
+//////////////////////////////////////// Media queries /////////////////////////////////////
+
+.software-title {
+  font-size: 1.5rem; // Default size
+  background-color: #002d62;
+  color: whitesmoke;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  @media screen and (min-width: 320px) {
+    font-size: 1rem;
+    width: 75%;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 1rem;
+    width: 50%;
+  }
+  @media screen and (min-width: 1025px) {
+    font-size: 3rem;
+    width: 25%;
+  }
+}
+
+.my-name {
+  font-size: 3.5rem; // Default size
+  font-weight: bold;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  @media screen and (min-width: 320px) {
+    font-size: 1.75rem;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 2.5rem;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 3.5rem;
+  }
+}
+
+.intro-text {
+  font-size: 1rem;
+  text-align: center;
+  @media screen and (min-width: 320px) {
+    font-size: 1rem;
+    text-align: start;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 1rem;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 1rem;
+  }
+}
+
+// CSS and media queries for type-animation text.
+
+.type-animation-row {
+  color: #002d62;
+  // for margin from the top.
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-top: 100px;
+  }
+
+  @media screen and (min-width: 769px) {
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+
+  //   for fontsizes.
+  @media screen and (min-width: 320px) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 375px) {
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 425px) {
+    font-size: 25px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 2.5rem;
+  }
 }
