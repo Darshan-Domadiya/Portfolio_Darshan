@@ -64,7 +64,7 @@ const Header = () => {
         } mx-4 mx-md-5`}
       >
         <Container className="text-center">
-          <Navbar.Brand href="/" className=" navbar-logo">
+          <Navbar.Brand href="/" className="  navbar-logo">
             DARSHAN
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -74,7 +74,7 @@ const Header = () => {
                 (link) => (
                   <Nav.Link
                     key={link}
-                    href={`#${link}`}
+                    // href={`#${link}`}
                     className={activeLink === link ? "active" : ""}
                     onClick={() => handleSetActiveLink(link)}
                   >

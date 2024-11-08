@@ -22,11 +22,13 @@ const About = () => {
         </Col>
         <Col sm={12} md={12} lg={7} xl={6}>
           <div className="p-2">
-            Software developer with expertise in FUll stack MERN stack
-            development. Equipped with strong data structures knowledge and
-            fundamentals about programming.
+            Aspiring software developer with nearly a year of hands-on
+            internships experience in full-stack web development, specializing
+            in the MERN stack (MongoDB, Express.js, React, Node.js). Equipped
+            with skills and poised to apply and expand my expertise in a
+            dynamic, growth-oriented environment.
           </div>
-          <div className="mt-2 p-2 tab-text">
+          <div className=" p-2 tab-text">
             <Tabs
               id="controlled-tab-example"
               activeKey={key}
@@ -37,58 +39,81 @@ const About = () => {
                 <div>
                   <div className="d-flex flex-column">
                     <span className="fs-5">Web Developer Intern </span>
-                    <span className="fs-5">DigiGlobe Solutions</span>
+                    <span>Organization : DigiGlobe Solutions - Remote</span>
                     <span>Duration : July 2024 - Aug 2024</span>
-                    <span>
-                      Worked on developing and optimizing web applications using
-                      modern web technologies.
-                    </span>
+                    <ul>
+                      <li>
+                        Assisted in the development and maintenance of web
+                        applications using HTML, CSS, and JavaScript.
+                      </li>
+                      <li>
+                        Utilized version control systems (e.g., Git, GitHub) for
+                        code management and collaboration.
+                      </li>
+                    </ul>
                   </div>
 
-                  <div className="d-flex flex-column mt-3">
+                  <div className="d-flex flex-column">
                     <span className="fs-5">Software Developer Intern</span>
-                    <span className="fs-5">Concetto Labs Pvt. Ltd.</span>
+                    <span>
+                      Organization : Concetto Labs Pvt. Ltd. - Ahmedabad,Gujarat
+                    </span>
                     <span>Duration : Jan 2024 - June 2024</span>
-                    <span>
-                      Worked on developing and optimizing web applications using
-                      modern web technologies.
-                    </span>
+                    <ul>
+                      <li>
+                        Gained hands-on experience with MERN stack development.
+                      </li>
+                      <li>
+                        Developed <strong>eCart</strong>, an e-commerce website
+                        integrated with APIs.
+                      </li>
+                      <li>
+                        Enhanced skills in building scalable and responsive
+                        applications using React, Node.js, Express, and MongoDB.
+                      </li>
+                    </ul>
                   </div>
-                  <div className="d-flex flex-column mt-3">
+                  <div className="d-flex flex-column">
                     <span className="fs-5">ReactJs Intern</span>
-                    <span className="fs-5">Stypix Pvt. Ltd.</span>
-                    <span>Duration : Jul 2023 - Sep 2023</span>
                     <span>
-                      Worked on developing and optimizing web applications using
-                      modern web technologies.
+                      Organization : Stypix Pvt. Ltd. - Ahmedabad,India
                     </span>
+                    <span>Duration : Jul 2023 - Sep 2023</span>
+                    <ul>
+                      <li>
+                        Gained fundamental knowledge of frontend development and
+                        implemented it while developing a car rental website
+                        utilizing React Js.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </Tab>
+
               <Tab eventKey="Education" title="Education">
                 <div>
                   <div className="d-flex flex-column ">
                     <span className="fs-5">Master in Applied Computing</span>
-                    <span className="fs-5">University of Windsor</span>
+                    <span>University of Windsor - Windsor, Canada</span>
                     <span>Duration : Jan 2025 - Present</span>
-                    <span>GPA : 3.8/4.0</span>
                   </div>
                   <div className="d-flex flex-column mt-3">
                     <span className="fs-5">B.E. in Information Technology</span>
-                    <span className="fs-5">
-                      Gujarat Technological University
+                    <span>
+                      Gujarat Technological University - Ahmedabad, India
                     </span>
                     <span>Duration : Aug 2020 - June 2024</span>
                     <span>CGPA : 8.78/10</span>
                   </div>
                   <div className="d-flex flex-column mt-3">
                     <span className="fs-5">12th Science(PCM)</span>
-                    <span className="fs-5">Gayatri Vidhyalaya</span>
+                    <span>Gayatri Vidhyalaya - Ahmedabad, India</span>
                     <span>Duration : June 2019 - Mar 2020</span>
                     <span>Percentage: 61%</span>
                   </div>
                 </div>
               </Tab>
+
               <Tab eventKey="Skills" title="Skills">
                 <div className="d-flex flex-column gap-3 ">
                   <span>

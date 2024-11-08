@@ -42,15 +42,14 @@ const Home = () => {
         <Container className="mt-5 landing-page d-flex align-items-center flex-column justify-content-center ">
           <Row className=" type-animation-row">
             <TypeAnimation
-              className=""
               sequence={[
-                "I am Software Developer...",
+                "I am Software Developer",
                 1000,
-                "I am Frontend Developer...",
+                "I am Frontend Developer",
                 1000,
-                "I am Backend Developer...",
+                "I am Backend Developer",
                 1000,
-                "I am Full-stack Developer...",
+                "I am Full-stack Developer",
                 1000,
               ]}
               wrapper="span"
@@ -94,8 +93,8 @@ const Home = () => {
                 </span>
                 <span className="my-name">Darshan Domadiya</span>
                 <p className="intro-text">
-                  A software developer driven by innovation and design. Poised
-                  to turn your vision into reality!
+                  A software developer driven by innovation and enthusiasm.
+                  Poised to turn your vision into reality!
                 </p>
 
                 <div className="mt-3 d-flex flex-column flex-md-row gap-4">

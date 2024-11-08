@@ -166,7 +166,7 @@ const Contact = () => {
             </a>
 
             <a
-              href="https://leetcode.com/u/Darshan_Domadiya23/"
+              href="https://www.instagram.com/_i_m_darshan_22/"
               target="_blank"
               rel="noopener noreferrer"
             >

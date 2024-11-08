@@ -45,8 +45,7 @@ const Projects = () => {
                 application with authentication. It allows users to sign up, log
                 in, and log out, and provides access to protected routes only
                 for authenticated users`,
-      cardLink:
-        "https://github.com/Darshan-Domadiya/e-Cart-online-shopping-website-",
+      cardLink: "https://github.com/Darshan-Domadiya/Real-Estate_MERN",
     },
   ];
 
@@ -57,7 +56,7 @@ const Projects = () => {
       </div>
       <Row className="mt-4">
         {projectObject.map((project, index) => (
-          <Col sm={12} md={6} lg={4} xl={3} className="mb-4" key={index}>
+          <Col sm={12} md={6} lg={6} xl={6} className="mb-4" key={index}>
             <Card
               style={{
                 width: "100%",
@@ -85,10 +84,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Button
-                      className="btn-viewProject"
-                      style={{ width: "100%" }}
-                    >
+                    <Button className="btn-style-landingPage">
                       View Project
                     </Button>
                   </a>
