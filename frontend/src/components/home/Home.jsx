@@ -40,26 +40,28 @@ const Home = () => {
     <>
       <section id="home" className="section ubuntu-regular">
         <Container className="mt-5 landing-page d-flex align-items-center flex-column justify-content-center ">
-          <Row className=" type-animation-row">
-            <TypeAnimation
-              sequence={[
-                "I am Software Developer",
-                1000,
-                "I am Frontend Developer",
-                1000,
-                "I am Backend Developer",
-                1000,
-                "I am Full-stack Developer",
-                1000,
-              ]}
-              wrapper="span"
-              speed={50}
-              style={{
-                display: "inline-block",
-                // boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
-              }}
-              repeat={Infinity}
-            />
+          <Row className=" type-animation-row ">
+            <Col className="d-flex align-items-center justify-contents-start">
+              <TypeAnimation
+                sequence={[
+                  "I am Software Developer",
+                  1000,
+                  "I am Frontend Developer",
+                  1000,
+                  "I am Backend Developer",
+                  1000,
+                  "I am Full-stack Developer",
+                  1000,
+                ]}
+                wrapper="span"
+                speed={50}
+                style={{
+                  display: "inline-block",
+                  // boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+                }}
+                repeat={Infinity}
+              />
+            </Col>
           </Row>
           <Row className="w-100 d-flex align-items-start mt-md-5">
             <Col
