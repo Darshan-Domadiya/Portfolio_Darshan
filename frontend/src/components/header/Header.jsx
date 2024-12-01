@@ -65,7 +65,7 @@ const Header = () => {
       >
         <Container className="text-center">
           <Navbar.Brand href="/" className="  navbar-logo">
-            DARSHAN
+            DAR$HAN
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

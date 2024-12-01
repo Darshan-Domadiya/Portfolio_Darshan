@@ -3,11 +3,10 @@
   background-color: #f0f8ff;
   color: #002d62;
   transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
-}
-
-.card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  height: 100%; // Ensure cards stretch to full height in the grid
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 // View More on github button style.
@@ -20,6 +19,12 @@
   border-radius: 5px;
   box-shadow: 0 0 0 rgba(74, 144, 226, 0.4);
   animation: pulse 1s infinite;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lifts the card slightly */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  background-color: #e6f7ff; /* Slightly change the background for a visual cue */
 }
 
 @keyframes pulse {

@@ -14,6 +14,8 @@ const Projects = () => {
                 in, and log out, and provides access to protected routes only
                 for authenticated users`,
       cardLink: "https://github.com/Darshan-Domadiya/MERN-Auth",
+      TechStack:
+        "React Js, Express, Node Js, MongoDB, Firebase, React Bootstrap, Redux Toolkit",
     },
 
     {
@@ -26,6 +28,7 @@ const Projects = () => {
                 for authenticated users`,
       cardLink:
         "https://github.com/Darshan-Domadiya/e-Cart-online-shopping-website-",
+      TechStack: "HTML, SCSS, React Js, Postman, REST Api, React Bootstrap,",
     },
     {
       index: 2,
@@ -36,6 +39,8 @@ const Projects = () => {
                 in, and log out, and provides access to protected routes only
                 for authenticated users`,
       cardLink: "https://github.com/Darshan-Domadiya/portfolio",
+      TechStack:
+        "React Js, Express, Node Js, MongoDB, Firebase, React Bootstrap",
     },
     {
       index: 3,
@@ -46,6 +51,8 @@ const Projects = () => {
                 in, and log out, and provides access to protected routes only
                 for authenticated users`,
       cardLink: "https://github.com/Darshan-Domadiya/Real-Estate_MERN",
+      TechStack:
+        "React Js, Express Js, Node Js, MongoDB, Firebase, React Bootstrap, Redux Toolkit, SCSS",
     },
   ];
 
@@ -56,7 +63,7 @@ const Projects = () => {
       </div>
       <Row className="mt-4">
         {projectObject.map((project, index) => (
-          <Col sm={12} md={6} lg={6} xl={6} className="mb-4" key={index}>
+          <Col sm={12} md={6} lg={6} xl={4} className="mb-4" key={index}>
             <Card
               style={{
                 width: "100%",
@@ -78,14 +85,24 @@ const Projects = () => {
                 <Card.Text style={{ textAlign: "justify" }}>
                   {project.cardText}
                 </Card.Text>
-                <div className="text-center">
+                <Card.Text>Tech Stack : {project.TechStack}</Card.Text>
+                <div className="d-sm-flex align-items-center justify-content-center gap-4">
                   <a
                     href={project.cardLink}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Button className="btn-style-landingPage">
+                    <Button className="w-100 btn-style-landingPage">
                       View Project
+                    </Button>
+                  </a>
+                  <a
+                    href={project.cardLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button className="w-100 mt-2 mt-sm-0 btn-style-landingPage">
+                      View Demo
                     </Button>
                   </a>
                 </div>

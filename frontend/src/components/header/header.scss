@@ -20,7 +20,7 @@
 }
 
 .custom-navbar .nav-link {
-  color: #002d62;
+  color: whitesmoke;
   font-weight: 500;
   font-size: large;
   padding-bottom: 5px;
@@ -28,10 +28,14 @@
   border-bottom: 2px solid transparent; /* Default border */
 }
 
-.custom-navbar .nav-link.active,
+.custom-navbar .nav-link.active {
+  color: whitesmoke;
+  border-bottom: 2px solid whitesmoke; /* Underline effect */
+}
+
 .custom-navbar .nav-link:hover {
   color: #002d62;
-  border-bottom: 2px solid #002d62; /* Underline effect */
+  border-bottom: 2px solid #002d62;
 }
 
 // Navbar logo.
@@ -39,7 +43,7 @@
 .navbar-logo {
   font-family: "Great Vibes", cursive; /* Use the cursive, signature font */
   font-size: 2rem; /* Slightly larger font size */
-  color: #002d62; /* Primary color */
+  color: whitesmoke; /* Primary color */
   font-weight: 200;
   // letter-spacing: 2px; /* Slightly spaced out for elegance */
   display: inline-block;

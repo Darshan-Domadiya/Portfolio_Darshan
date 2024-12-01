@@ -6,6 +6,12 @@ import Contact from "../contact/Contact";
 import { Button, Col, Container, Image, Row } from "react-bootstrap";
 import "./home.scss";
 import { TypeAnimation } from "react-type-animation";
+import {
+  FaArrowCircleDown,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+} from "react-icons/fa";
 
 const Home = () => {
   const handleGetStartedClick = () => {
@@ -40,30 +46,7 @@ const Home = () => {
     <>
       <section id="home" className="section ubuntu-regular">
         <Container className="mt-5 landing-page d-flex align-items-center flex-column justify-content-center ">
-          <Row className=" type-animation-row ">
-            <Col className="d-flex align-items-center justify-contents-start">
-              <TypeAnimation
-                sequence={[
-                  "I am Software Developer",
-                  1000,
-                  "I am Frontend Developer",
-                  1000,
-                  "I am Backend Developer",
-                  1000,
-                  "I am Full-stack Developer",
-                  1000,
-                ]}
-                wrapper="span"
-                speed={50}
-                style={{
-                  display: "inline-block",
-                  // boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
-                }}
-                repeat={Infinity}
-              />
-            </Col>
-          </Row>
-          <Row className="w-100 d-flex align-items-start mt-md-5">
+          <Row className="w-100 d-flex align-items-start mt-md-5 row">
             <Col
               sm={{ span: 12, order: 1 }}
               md={{ span: 4, order: 2 }}
@@ -81,41 +64,101 @@ const Home = () => {
                 />
               </div>
             </Col>
-
             <Col
               sm={{ span: 12, order: 2 }}
               md={{ span: 8, order: 1 }}
-              lg={7}
-              xl={8}
-              className="d-flex align-items-center flex-column justify-content-start mt-4"
+              lg={5}
+              xl={7}
+              className="d-flex align-items-start justify-content-start offset-xl-1 mt-0 mt-md-5"
             >
-              <div className="d-flex flex-column justify-content-start w-100">
-                <span className="software-title  fs-5 ">
-                  Software Developer
-                </span>
-                <span className="my-name">Darshan Domadiya</span>
-                <p className="intro-text">
-                  A software developer driven by innovation and enthusiasm.
-                  Poised to turn your vision into reality!
-                </p>
-
+              <div className="d-flex flex-column">
+                <span className=" hello-font">Hi There,</span>
+                <span className=" name-font">I{"'"}m Darshan Domadiya</span>
+                <div className="type-animation-text">
+                  <TypeAnimation
+                    sequence={[
+                      "My expertise in Front End Development",
+                      1000,
+                      "My expertise in Back End Development",
+                      1000,
+                      "My expertise in Full Stack Development ",
+                      1000,
+                      "My expertise in Responsive Web Design ",
+                      1000,
+                    ]}
+                    wrapper="span"
+                    speed={50}
+                    style={{
+                      display: "inline-block",
+                      // boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+                    }}
+                    repeat={Infinity}
+                  />
+                </div>
                 <div className="mt-3 d-flex flex-column flex-md-row gap-4">
-                  <a
-                    href="/Resume_Darshan.pdf"
-                    download="Darshan_Domadiya_Resume.pdf"
-                  >
-                    <Button className="btn-style-landingPage">
-                      Download Resume
-                    </Button>
-                  </a>
-
                   <div>
-                    <Button
-                      className="btn-style-landingPage"
-                      onClick={handleGetStartedClick}
+                    <a
+                      href="/Resume_Darshan.pdf"
+                      download="Darshan_Domadiya_Resume.pdf"
                     >
-                      Get Started
-                    </Button>
+                      <Button className="btn-style-landingPage">
+                        Download Resume
+                      </Button>
+                    </a>
+                  </div>
+
+                  <Button
+                    className="btn-style-landingPage d-flex align-items-center gap-2"
+                    onClick={handleGetStartedClick}
+                  >
+                    Get Started
+                    <FaArrowCircleDown />
+                  </Button>
+                </div>
+                <div className="mt-4 fw-semibold d-flex align-items-center ">
+                  <div>
+                    <a
+                      href="https://github.com/Darshan-Domadiya?tab=repositories"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaInstagram
+                        size={30}
+                        style={{
+                          margin: "0 10px",
+                          cursor: "pointer",
+                          color: "#002d62",
+                        }}
+                      />
+                    </a>
+                    <a
+                      href="https://github.com/Darshan-Domadiya?tab=repositories"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaGithub
+                        size={30}
+                        style={{
+                          margin: "0 10px",
+                          cursor: "pointer",
+                          color: "#002d62",
+                        }}
+                      />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/domadiya-darshan/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaLinkedin
+                        size={30}
+                        style={{
+                          margin: "0 10px",
+                          cursor: "pointer",
+                          color: "#002d62",
+                        }}
+                      />
+                    </a>
                   </div>
                 </div>
               </div>

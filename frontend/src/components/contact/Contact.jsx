@@ -200,7 +200,7 @@ const Contact = () => {
           <div className="d-flex gap-1 justify-content-center mt-5 flex-wrap ">
             <span>&copy; 2024 Darshan Domadiya.</span>
             <span className="footer-text">
-              ✨ Crafted with passion by Darshan Domadiya
+              ✨ Built with passion by Darshan Domadiya
             </span>
           </div>
         </Row>
