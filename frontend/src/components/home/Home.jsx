@@ -12,6 +12,7 @@ import {
   FaInstagram,
   FaLinkedin,
 } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 const Home = () => {
   const handleGetStartedClick = () => {
@@ -46,7 +47,7 @@ const Home = () => {
     <>
       <section id="home" className="section ubuntu-regular">
         <Container className="mt-5 landing-page d-flex align-items-center flex-column justify-content-center ">
-          <Row className="w-100 d-flex align-items-start mt-md-5 row">
+          <Row className="w-100 d-flex align-items-start mt-md-5 row-landingPage">
             <Col
               sm={{ span: 12, order: 1 }}
               md={{ span: 4, order: 2 }}
@@ -64,16 +65,17 @@ const Home = () => {
                 />
               </div>
             </Col>
+
             <Col
               sm={{ span: 12, order: 2 }}
               md={{ span: 8, order: 1 }}
-              lg={5}
+              lg={7}
               xl={7}
               className="d-flex align-items-start justify-content-start offset-xl-1 mt-0 mt-md-5"
             >
               <div className="d-flex flex-column">
-                <span className=" hello-font">Hi There,</span>
-                <span className=" name-font">I{"'"}m Darshan Domadiya</span>
+                <span className=" hello-text fw-medium">Hi There,</span>
+                <span className=" my-name">I{"'"}m Darshan Domadiya</span>
                 <div className="type-animation-text">
                   <TypeAnimation
                     sequence={[
@@ -95,25 +97,26 @@ const Home = () => {
                     repeat={Infinity}
                   />
                 </div>
-                <div className="mt-3 d-flex flex-column flex-md-row gap-4">
+                <div className="  mt-3 d-flex flex-column flex-sm-row gap-3 gap-sm-4">
                   <div>
                     <a
                       href="/Resume_Darshan.pdf"
                       download="Darshan_Domadiya_Resume.pdf"
                     >
-                      <Button className="btn-style-landingPage">
+                      <Button className="btn-style-landingPage ">
                         Download Resume
                       </Button>
                     </a>
                   </div>
-
-                  <Button
-                    className="btn-style-landingPage d-flex align-items-center gap-2"
-                    onClick={handleGetStartedClick}
-                  >
-                    Get Started
-                    <FaArrowCircleDown />
-                  </Button>
+                  <div>
+                    <Button
+                      className="btn-style-landingPage d-flex align-items-center gap-2"
+                      onClick={handleGetStartedClick}
+                    >
+                      Get Started
+                      <FaArrowCircleDown />
+                    </Button>
+                  </div>
                 </div>
                 <div className="mt-4 fw-semibold d-flex align-items-center ">
                   <div>
@@ -137,6 +140,20 @@ const Home = () => {
                       rel="noopener noreferrer"
                     >
                       <FaGithub
+                        size={30}
+                        style={{
+                          margin: "0 10px",
+                          cursor: "pointer",
+                          color: "#002d62",
+                        }}
+                      />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/domadiya-darshan/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <SiLeetcode
                         size={30}
                         style={{
                           margin: "0 10px",

@@ -19,9 +19,9 @@ const About = () => {
         <p className="text-center fs-1 section-heading">About Me</p>
       </div>
       <Row className="mt-3">
-        <Col sm={12} md={5}>
+        <Col sm={12} md={6}>
           <div>
-            <p className="fs-3 text-center">Education</p>
+            <p className="fs-3 text-center fw-semibold">Education</p>
 
             <div className="mt-4">
               <Card border="info">
@@ -34,10 +34,6 @@ const About = () => {
                         University of Windsor - Ontario, Canada
                       </span>
                       <span>Current CGPA - </span>
-                      <span>
-                        Major Courses: Advanced Software Engineering, Advanced
-                        Computing Concepts, Advanced Database Topics
-                      </span>
                     </div>
                   </Card.Text>
                 </Card.Body>
@@ -58,10 +54,24 @@ const About = () => {
                         Gujarat Technological University - Ahmedabad, India
                       </span>
                       <span>CGPA - 8.57/10 </span>
-                      <span>
-                        Major Courses: Advanced Web Programming, Web
-                        Development, Data Structures and Algorithms
+                    </div>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+            <div className="mt-4">
+              <Card border="info">
+                <Card.Body>
+                  <Card.Title>12th Science</Card.Title>
+                  <Card.Text>
+                    <div className="d-flex flex-column">
+                      <span className="text-secondary">
+                        Jun 2019 - Mar 2020
                       </span>
+                      <span className="text-secondary">
+                        Gayatri Vidhyalaya - Ahmedabad, India
+                      </span>
+                      <span>Percentage - 61%</span>
                     </div>
                   </Card.Text>
                 </Card.Body>
@@ -69,9 +79,35 @@ const About = () => {
             </div>
           </div>
         </Col>
-        <Col sm={12} md={7}>
+        <Col sm={12} md={6} className="mt-4 mt-sm-0">
           <div>
-            <p className="text-center fs-3">Professional Experience</p>
+            <p className="text-center fs-3 fw-semibold">
+              Professional Experience
+            </p>
+
+            <div className="mt-4">
+              <Card border="info">
+                <Card.Body>
+                  <Card.Title>Web Developer Intern</Card.Title>
+                  <Card.Text>
+                    <div className="d-flex flex-column">
+                      <span className="text-secondary">
+                        DigiGlobe Solutions{" "}
+                      </span>
+                      <span className="text-secondary">
+                        {" "}
+                        Jul 2024 - Aug 2024
+                      </span>
+                      <span>
+                        <span className="fw-medium"> Skills:</span> ReactJs,
+                        Bootstrap, SCSS, Postman, REST Api, GitHub
+                      </span>
+                    </div>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+
             <div className="mt-4">
               <Card border="info">
                 <Card.Body>
@@ -79,25 +115,36 @@ const About = () => {
                   <Card.Text>
                     <div className="d-flex flex-column">
                       <span className="text-secondary">
-                        Concetto Labs Pvt. Ltd. ---> Jan 2024 - June 2024
+                        Concetto Labs Pvt. Ltd.{" "}
                       </span>
-                      <span className="text-secondary"></span>
+                      <span className="text-secondary">
+                        {" "}
+                        Jan 2024 - June 2024
+                      </span>
                       <span>
-                        <ul>
-                          <li>
-                            Gained hands-on experience with MERN stack
-                            development.
-                          </li>
-                          <li>
-                            Developed <strong>eCart</strong>, an e-commerce
-                            website integrated with APIs.
-                          </li>
-                          <li>
-                            Enhanced skills in building scalable and responsive
-                            applications using React, Node.js, Express, and
-                            MongoDB.
-                          </li>
-                        </ul>
+                        <span className="fw-medium"> Skills:</span> ReactJs,
+                        NodeJs, ExpressJs, MongoDB, React Bootstrap, Postman
+                      </span>
+                    </div>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+
+            <div className="mt-4">
+              <Card border="info">
+                <Card.Body>
+                  <Card.Title>React Js Intern</Card.Title>
+                  <Card.Text>
+                    <div className="d-flex flex-column">
+                      <span className="text-secondary">Stypix Pvt. Ltd. </span>
+                      <span className="text-secondary">
+                        {" "}
+                        Jul 2023 - Sep 2023
+                      </span>
+                      <span>
+                        <span className="fw-medium"> Skills:</span> HTML, CSS,
+                        JavaScript, ReactJs, Bootstrap, Responsive Web Design
                       </span>
                     </div>
                   </Card.Text>
