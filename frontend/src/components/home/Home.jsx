@@ -55,14 +55,16 @@ const Home = () => {
               xl={4}
               className="d-flex align-items-center justify-content-center mb-4 mt-4"
             >
-              <div className="round-image-div">
-                <Image
-                  src="./profile.png"
-                  alt="profile_photo"
-                  className="object-fit-cover img-fluid"
-                  height="100%"
-                  width="100%"
-                />
+              <div className="glass-image-container">
+                <div className="glass-image-frame">
+                  <Image
+                    src="./profile_photo.JPG"
+                    alt="profile_photo"
+                    className="profile-image"
+                    height="100%"
+                    width="100%"
+                  />
+                </div>
               </div>
             </Col>
 
@@ -121,7 +123,7 @@ const Home = () => {
                 <div className="mt-4 fw-semibold d-flex align-items-center ">
                   <div>
                     <a
-                      href="https://github.com/Darshan-Domadiya?tab=repositories"
+                      href="https://www.instagram.com/_i_m_darshan_23/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -135,7 +137,7 @@ const Home = () => {
                       />
                     </a>
                     <a
-                      href="https://github.com/Darshan-Domadiya?tab=repositories"
+                      href="https://github.com/Darshan-Domadiya"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -149,7 +151,7 @@ const Home = () => {
                       />
                     </a>
                     <a
-                      href="https://www.linkedin.com/in/domadiya-darshan/"
+                      href="https://leetcode.com/u/Darshan_Domadiya23/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

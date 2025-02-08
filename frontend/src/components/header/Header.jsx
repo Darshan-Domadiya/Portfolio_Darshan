@@ -3,6 +3,7 @@ import { Col, Container, Image, Row } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./header.scss";
+import { FaCode } from "react-icons/fa6";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -63,9 +64,12 @@ const Header = () => {
           isVisible ? "visible" : "hidden"
         } mx-4 mx-md-5`}
       >
-        <Container className="text-center">
-          <Navbar.Brand href="/" className="  navbar-logo">
-            DAR$HAN
+        <Container className="text-center ">
+          <Navbar.Brand href="/" className="navbar-logo">
+            <div className="d-flex align-items-center gap-1 gap-sm-2">
+              <FaCode />
+              DAR$HAN
+            </div>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

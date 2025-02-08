@@ -16,7 +16,7 @@ const Contact = () => {
 
     emailjs
       .sendForm("service_pgl4weo", "template_8tnnhb7", form.current, {
-        publicKey: "PlLrQgImmrlf_BKWz",
+        publicKey: "TexLZyf018rTtz86Q",
       })
       .then(
         () => {
@@ -113,7 +113,7 @@ const Contact = () => {
                   style={{ margin: "0 10px", cursor: "pointer" }}
                 />
 
-                <span>Windsor, ON N9B 3P4, Canada</span>
+                <span>Windsor, Ontario, Canada</span>
               </div>
 
               <div className="d-flex align-items-center">
@@ -135,7 +135,7 @@ const Contact = () => {
 
             <div className="mt-4 d-flex align-items-center mx-2 mx-sm-4 mx-xl-5 mt-5 gap-2">
               <a
-                href="https://github.com/Darshan-Domadiya?tab=repositories"
+                href="https://github.com/Darshan-Domadiya"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -163,11 +163,11 @@ const Contact = () => {
                 />
               </a>
               <a
-                href="https://twitter.com/yourusername"
+                href="https://leetcode.com/u/Darshan_Domadiya23/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaTwitter
+                <SiLeetcode
                   size={30}
                   style={{
                     margin: "0 10px",
@@ -178,7 +178,7 @@ const Contact = () => {
               </a>
 
               <a
-                href="https://www.instagram.com/_i_m_darshan_22/"
+                href="https://www.instagram.com/_i_m_darshan_23/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -198,7 +198,7 @@ const Contact = () => {
       <Container fluid className="border-top footer-container">
         <Row>
           <div className="d-flex gap-1 justify-content-center mt-5 flex-wrap ">
-            <span>&copy; 2024 Darshan Domadiya.</span>
+            <span>&copy; 2025 Darshan Domadiya.</span>
             <span className="footer-text">
               ✨ Built with passion by Darshan Domadiya
             </span>
