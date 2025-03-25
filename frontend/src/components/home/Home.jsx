@@ -16,7 +16,7 @@ import { SiLeetcode } from "react-icons/si";
 
 const Home = () => {
   const handleGetStartedClick = () => {
-    const aboutSection = document.getElementById("about");
+    const aboutSection = document.getElementById("projects");
     aboutSection.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -115,7 +115,7 @@ const Home = () => {
                       className="btn-style-landingPage d-flex align-items-center gap-2"
                       onClick={handleGetStartedClick}
                     >
-                      Get Started
+                      Show Projects
                       <FaArrowCircleDown />
                     </Button>
                   </div>
