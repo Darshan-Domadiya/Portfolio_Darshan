@@ -14,7 +14,7 @@ import "./about.scss";
 const About = () => {
   const [key, setKey] = useState("Experience");
   return (
-    <Container>
+    <Container className="section-content">
       <div className="text-center">
         <p className="text-center fs-1 section-heading">About Me</p>
       </div>
@@ -24,7 +24,7 @@ const About = () => {
             <p className="fs-3 text-center fw-semibold">Education</p>
 
             <div className="mt-4">
-              <Card border="info">
+              <Card className="custom-border">
                 <Card.Body>
                   <Card.Title>Master{"'"}s in Applied Computing</Card.Title>
                   <Card.Text>
@@ -40,7 +40,7 @@ const About = () => {
               </Card>
             </div>
             <div className="mt-4">
-              <Card border="info">
+              <Card className="custom-border">
                 <Card.Body>
                   <Card.Title>
                     Bachelor of Engineering in Information Technology
@@ -60,7 +60,7 @@ const About = () => {
               </Card>
             </div>
             <div className="mt-4">
-              <Card border="info">
+              <Card className="custom-border">
                 <Card.Body>
                   <Card.Title>12th Science</Card.Title>
                   <Card.Text>
@@ -86,7 +86,7 @@ const About = () => {
             </p>
 
             <div className="mt-4">
-              <Card border="info">
+              <Card className="custom-border">
                 <Card.Body>
                   <Card.Title>Web Developer Intern</Card.Title>
                   <Card.Text>
@@ -109,7 +109,7 @@ const About = () => {
             </div>
 
             <div className="mt-4">
-              <Card border="info">
+              <Card className="custom-border">
                 <Card.Body>
                   <Card.Title>Software Developer Intern</Card.Title>
                   <Card.Text>
@@ -132,7 +132,7 @@ const About = () => {
             </div>
 
             <div className="mt-4">
-              <Card border="info">
+              <Card className="custom-border">
                 <Card.Body>
                   <Card.Title>React Js Intern</Card.Title>
                   <Card.Text>

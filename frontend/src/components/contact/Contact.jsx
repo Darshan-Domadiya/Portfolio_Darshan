@@ -133,48 +133,27 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="mt-4 d-flex align-items-center mx-2 mx-sm-4 mx-xl-5 mt-5 gap-2">
+            <div className="mt-4 d-flex align-items-center mx-2 mx-sm-4 mx-xl-5 mt-5 gap-3">
               <a
                 href="https://github.com/Darshan-Domadiya"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaGithub
-                  size={30}
-                  style={{
-                    margin: "0 10px",
-                    cursor: "pointer",
-                    color: "#002d62",
-                  }}
-                />
+                <FaGithub size={30} className="fa-style" />
               </a>
               <a
                 href="https://www.linkedin.com/in/domadiya-darshan/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaLinkedin
-                  size={30}
-                  style={{
-                    margin: "0 10px",
-                    cursor: "pointer",
-                    color: "#002d62",
-                  }}
-                />
+                <FaLinkedin size={30} className="fa-style" />
               </a>
               <a
                 href="https://leetcode.com/u/Darshan_Domadiya23/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <SiLeetcode
-                  size={30}
-                  style={{
-                    margin: "0 10px",
-                    cursor: "pointer",
-                    color: "#002d62",
-                  }}
-                />
+                <SiLeetcode size={30} className="fa-style" />
               </a>
 
               <a
@@ -182,14 +161,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaInstagram
-                  size={30}
-                  style={{
-                    margin: "0 10px",
-                    cursor: "pointer",
-                    color: "#002d62",
-                  }}
-                />
+                <FaInstagram size={30} className="fa-style" />
               </a>
             </div>
           </Col>

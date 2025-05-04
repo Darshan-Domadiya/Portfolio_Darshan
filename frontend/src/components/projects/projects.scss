@@ -1,7 +1,7 @@
 // Card style css
 .card {
-  background-color: #f0f8ff;
-  color: #002d62;
+  background-color: var(--bg-color);
+  color: var(--project-card);
   transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
   height: 100%; // Ensure cards stretch to full height in the grid
   display: flex;
@@ -11,7 +11,7 @@
 
 // View More on github button style.
 .btn-viewGithub {
-  background-color: #4a90e2;
+  background-color: var(--btn-git);
   color: #000;
   font-size: 1rem;
   padding: 0.5rem 1.5rem;
@@ -23,8 +23,8 @@
 
 .card:hover {
   transform: translateY(-10px); /* Lifts the card slightly */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
-  background-color: #e6f7ff; /* Slightly change the background for a visual cue */
+  box-shadow: 0 10px 20px var(--navbar-back); /* Adds a subtle shadow */
+  background-color: var(--bg-color); /* Slightly change the background for a visual cue */
 }
 
 @keyframes pulse {

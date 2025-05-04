@@ -124,49 +124,35 @@ const Home = () => {
                     </Button>
                   </div>
                 </div>
-                <div className="mt-4 fw-semibold d-flex align-items-center ">
-                  <div>
-                    <a
-                      href="https://www.instagram.com/_i_m_darshan_23/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaInstagram
-                        size={30}
-                        className="fa-style"
-                      />
-                    </a>
-                    <a
-                      href="https://github.com/Darshan-Domadiya"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaGithub
-                        size={30}
-                        className="fa-style"
-                      />
-                    </a>
-                    <a
-                      href="https://leetcode.com/u/Darshan_Domadiya23/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <SiLeetcode
-                        size={30}
-                        className="fa-style"
-                      />
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/domadiya-darshan/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaLinkedin
-                        size={30}
-                       className="fa-style"
-                      />
-                    </a>
-                  </div>
+                <div className="mt-4 gap-3 fw-semibold d-flex align-items-center ">
+                  <a
+                    href="https://www.instagram.com/_i_m_darshan_23/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaInstagram size={30} className="fa-style" />
+                  </a>
+                  <a
+                    href="https://github.com/Darshan-Domadiya"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGithub size={30} className="fa-style" />
+                  </a>
+                  <a
+                    href="https://leetcode.com/u/Darshan_Domadiya23/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <SiLeetcode size={30} className="fa-style" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/domadiya-darshan/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaLinkedin size={30} className="fa-style" />
+                  </a>
                 </div>
               </div>
             </Col>

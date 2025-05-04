@@ -15,6 +15,11 @@
   }
 }
 
+// custom card border
+.custom-border{
+  border: 1px solid var(--text-color);
+}
+
 /* Active tab styling */
 .custom-tabs .nav-link.active {
   font-weight: medium;

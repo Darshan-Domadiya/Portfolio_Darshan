@@ -11,6 +11,9 @@
   --navbar-back: #3d7eaa;
   --navlink-text: whitesmoke;
   --navbar-logo: whitesmoke;
+  --btn-git:  #4a90e2;
+  --project-card: #002d62;
+
 }
 
 [data-theme="dark"] {
@@ -23,7 +26,9 @@
   --accent-color: black;
   --navbar-back: rgb(225, 135, 70);
   --navlink-text: rgb(40, 40, 40);
-  --navbar-logo: black;
+  --navbar-logo: rgb(40, 40, 40);
+  --btn-git:  rgb(225, 135, 70);
+  --project-card:whitesmoke;
 }
 
 * {
@@ -50,7 +55,7 @@ section {
 
 // FA icon style
 .fa-style {
-  margin: "0 10px";
+  // margin: "0 10px";
   cursor: "pointer";
   color: var(--text-color);
 }
@@ -58,13 +63,14 @@ section {
 // Each section's css when it is loaded...
 .section {
   opacity: 0; /* Start invisible */
-  transform: translateX(-100px); /* Start off-screen to the left */
-  transition: opacity 1s ease, transform 1s ease; /* Transition for smooth effect */
+  transform: translateY(-120px); /* Start off-screen to the left */
+  transition: opacity 1s ease-in-out, transform 1s ease; /* Transition for smooth effect */
 }
 
 .section.visible {
   opacity: 1; /* Fade in */
   transform: translateX(0); /* Move into view */
+  // background-color: var(--bg-color);
 }
 
 // Each section heading css...
@@ -82,7 +88,7 @@ section {
   content: "";
   width: 100%;
   height: 4px;
-  background: var(--accent-color);
+  background: var(--text-color);
   position: absolute;
   left: 0;
   bottom: -5px;

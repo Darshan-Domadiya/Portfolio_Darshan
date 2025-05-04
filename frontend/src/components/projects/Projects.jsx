@@ -51,6 +51,20 @@ const Projects = () => {
       TechStack:
         "React Js, Express, Node Js, MongoDB, Firebase, React Bootstrap, Redux Toolkit",
     },
+    {
+      index: 4,
+      cardImage: "./chatMate.png",
+      cardTitle: "ChatMate",
+      cardText: `This is a MERN MongoDB, Express, React, Node.js stack
+                application with authentication. It allows users to sign up, log
+                in, and log out, and provides access to protected routes only
+                for authenticated users`,
+      projectLink: "https://github.com/Darshan-Domadiya/ChatMate",
+      demoLink:
+        "https://drive.google.com/file/d/1OHMFBLHGNvLYx8F5MF57U5zNW7KM7jsc/view?usp=sharing",
+      TechStack:
+        "React Js, Express, Node Js, MongoDB, Socket.io, MUI, Zustand",
+    },
   ];
 
   return (
