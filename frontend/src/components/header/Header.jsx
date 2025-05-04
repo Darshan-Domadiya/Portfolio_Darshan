@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./header.scss";
 import { FaCode } from "react-icons/fa6";
+import ToggleTheme from "../toggleTheme/ToggleTheme";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -87,6 +88,7 @@ const Header = () => {
                 )
               )}
             </Nav>
+            <ToggleTheme />
           </Navbar.Collapse>
         </Container>
       </Navbar>

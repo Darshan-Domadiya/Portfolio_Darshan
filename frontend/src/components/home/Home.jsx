@@ -89,6 +89,10 @@ const Home = () => {
                       1000,
                       "My expertise in Responsive Web Design ",
                       1000,
+                      "My expertise in API Development ",
+                      1000,
+                      "My expertise in AWS cloud ",
+                      1000,
                     ]}
                     wrapper="span"
                     speed={50}
@@ -99,7 +103,7 @@ const Home = () => {
                     repeat={Infinity}
                   />
                 </div>
-                <div className="  mt-3 d-flex flex-column flex-sm-row gap-3 gap-sm-4">
+                <div className="mt-3 d-flex flex-column flex-sm-row gap-3 gap-sm-4">
                   <div>
                     <a
                       href="/Resume_Darshan.pdf"
@@ -129,11 +133,7 @@ const Home = () => {
                     >
                       <FaInstagram
                         size={30}
-                        style={{
-                          margin: "0 10px",
-                          cursor: "pointer",
-                          color: "#002d62",
-                        }}
+                        className="fa-style"
                       />
                     </a>
                     <a
@@ -143,11 +143,7 @@ const Home = () => {
                     >
                       <FaGithub
                         size={30}
-                        style={{
-                          margin: "0 10px",
-                          cursor: "pointer",
-                          color: "#002d62",
-                        }}
+                        className="fa-style"
                       />
                     </a>
                     <a
@@ -157,11 +153,7 @@ const Home = () => {
                     >
                       <SiLeetcode
                         size={30}
-                        style={{
-                          margin: "0 10px",
-                          cursor: "pointer",
-                          color: "#002d62",
-                        }}
+                        className="fa-style"
                       />
                     </a>
                     <a
@@ -171,11 +163,7 @@ const Home = () => {
                     >
                       <FaLinkedin
                         size={30}
-                        style={{
-                          margin: "0 10px",
-                          cursor: "pointer",
-                          color: "#002d62",
-                        }}
+                       className="fa-style"
                       />
                     </a>
                   </div>

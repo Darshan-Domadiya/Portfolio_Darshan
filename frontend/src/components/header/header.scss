@@ -1,7 +1,7 @@
 .custom-navbar {
   position: fixed;
-  background-color: #3d7eaa;
-  color: #002d62;
+  background-color: var(--navbar-back);
+  color: var(--text-color);
   text-align: center;
   z-index: 1000;
   top: 0;
@@ -20,7 +20,7 @@
 }
 
 .custom-navbar .nav-link {
-  color: whitesmoke;
+  color: var(--navlink-text);
   font-weight: 500;
   font-size: large;
   padding-bottom: 5px;
@@ -38,18 +38,18 @@
 }
 
 .navbar-logo:hover {
-  color: #003580; /* Darken on hover */
+  color: var(--navbar-logo); /* Darken on hover */
   text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.5); /* Enhance shadow */
 }
 
 .custom-navbar .nav-link.active {
-  color: whitesmoke;
-  border-bottom: 2px solid whitesmoke; /* Underline effect */
+  color: var(--navlink-text);
+  border-bottom: 2px solid var(--navbar-logo); /* Underline effect */
 }
 
 .custom-navbar .nav-link:hover {
-  color: #002d62;
-  border-bottom: 2px solid #002d62;
+  // color: var(--navbar-logo);
+  border-bottom: 2px solid var(--navbar-logo);
 }
 
 // Navbar logo.
@@ -59,13 +59,13 @@
   font-weight: 700; /* Bold font */
   font-size: 2rem; /* Adjust size */
   letter-spacing: 2px; /* Add spacing for elegance */
-  color: whitesmoke; /* Professional blue color */
+  color: var(--navbar-logo); /* Professional blue color */
   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
   cursor: pointer; /* Make it interactive */
 }
 
 .navbar-logo:hover {
-  color: #003580; /* Darken on hover */
+  color: var(--navbar-logo); /* Darken on hover */
   transition: 0.5s ease-in;
 }
 
