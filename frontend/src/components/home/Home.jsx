@@ -13,10 +13,11 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
+import Certificate from "../certificate/Certificate";
 
 const Home = () => {
   const handleGetStartedClick = () => {
-    const aboutSection = document.getElementById("projects");
+    const aboutSection = document.getElementById("contact");
     aboutSection.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -119,8 +120,8 @@ const Home = () => {
                       className="btn-style-landingPage d-flex align-items-center gap-2"
                       onClick={handleGetStartedClick}
                     >
-                      Show Projects
-                      <FaArrowCircleDown />
+                      Contact Me
+                    {/*  <FaArrowCircleDown /> */}
                     </Button>
                   </div>
                 </div>
@@ -166,6 +167,10 @@ const Home = () => {
       <section id="skills" className="section ubuntu-regular">
         <Skills />
       </section>
+      <section id="certificate" className="section ubuntu-regular">
+        <Certificate />
+      </section>
+
       <section id="projects" className="section ubuntu-regular">
         <Projects />
       </section>
