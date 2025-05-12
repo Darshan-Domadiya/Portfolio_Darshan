@@ -25,16 +25,16 @@ const Certificate = () => {
               </p>
             </div>
             <div>
-              <div className="verify-button" >
+              <Button className="verify-button" >
                 <a
                   className="verify-link"
                   href="https://www.credly.com/badges/6391d156-2752-4960-a4d3-25d24228de13/public_url"
                   target="_blank"
                 >
                   {" "}
-                  Verify{" "}
+                  Verify Here{" "}
                 </a>
-              </div>
+              </Button>
             </div>
           </div>
         </Col>
