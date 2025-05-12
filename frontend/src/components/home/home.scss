@@ -20,11 +20,11 @@
   --bg-color: rgb(40, 40, 40);
   --text-color: rgb(210, 117, 48);
   --heading-color: rgb(210, 117, 48);
-  --btn-bg: rgb(210, 117, 48);
-  --btn-hover-bg: rgb(225, 135, 70);
+  --btn-hover-bg: rgb(210, 115, 55);
+  --btn-bg: rgb(190, 100, 40);
   --btn-hover-color: darkgrey;
   --accent-color: black;
-  --navbar-back: rgb(225, 135, 70);
+  --navbar-back: rgb(190, 100, 40);
   --navlink-text: rgb(40, 40, 40);
   --navbar-logo: rgb(40, 40, 40);
   --btn-git: rgb(225, 135, 70);
@@ -122,7 +122,7 @@ section {
   color: var(--accent-color);
   background-color: var(--btn-hover-bg);
   transform: translateY(-3px);
-  font-weight: bold;
+  // font-weight: bold;
 }
 
 // Font style

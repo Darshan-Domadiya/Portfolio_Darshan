@@ -23,8 +23,10 @@
 
 .card:hover {
   transform: translateY(-10px); /* Lifts the card slightly */
-  box-shadow: 0 10px 20px var(--navbar-back); /* Adds a subtle shadow */
-  background-color: var(--bg-color); /* Slightly change the background for a visual cue */
+  box-shadow: 0 10px 20px var(--bigBox-shadow); /* Adds a subtle shadow */
+  background-color: var(
+    --bg-color
+  ); /* Slightly change the background for a visual cue */
 }
 
 @keyframes pulse {

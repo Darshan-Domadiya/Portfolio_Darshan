@@ -1,4 +1,3 @@
-import React from "react";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import "./projects.scss";
 import { FaGithub } from "react-icons/fa";
@@ -62,8 +61,7 @@ const Projects = () => {
       projectLink: "https://github.com/Darshan-Domadiya/ChatMate",
       demoLink:
         "https://drive.google.com/file/d/1OHMFBLHGNvLYx8F5MF57U5zNW7KM7jsc/view?usp=sharing",
-      TechStack:
-        "React Js, Express, Node Js, MongoDB, Socket.io, MUI, Zustand",
+      TechStack: "React Js, Express, Node Js, MongoDB, Socket.io, MUI, Zustand",
     },
   ];
 
@@ -76,12 +74,12 @@ const Projects = () => {
         {projectObject.map((project, index) => (
           <Col sm={12} md={6} lg={6} xl={4} className="mb-4" key={index}>
             <Card
-              style={{
-                width: "100%",
-                borderRadius: "10px",
-                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-                cursor: "pointer",
-              }}
+            // style={{
+            //   width: "100%",
+            //   borderRadius: "10px",
+            //   boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+            //   cursor: "pointer",
+            // }}
             >
               <Card.Img
                 variant="top"

@@ -5,7 +5,7 @@ const Certificate = () => {
   return (
     <Container>
       <div className="text-center">
-        <p className="text-center fs-1 section-heading">Certifications</p>
+        <p className="text-center fs-1 section-heading">Certifications & Achievements</p>
       </div>
 
       <Row className="mt-4">
