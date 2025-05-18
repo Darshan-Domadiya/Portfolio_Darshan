@@ -129,7 +129,7 @@ const Projects = () => {
             className="text-decoration-none"
           >
             <Button
-              variant="primary"
+              // variant="primary"
               className="d-flex align-items-center gap-2 btn-viewGithub fw-bold"
             >
               View More On <FaGithub />

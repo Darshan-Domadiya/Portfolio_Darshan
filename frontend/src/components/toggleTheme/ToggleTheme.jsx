@@ -1,5 +1,7 @@
-// ThemeToggle.jsx
 import { useEffect, useState } from "react";
+import { FaMoon } from "react-icons/fa";
+import { BsFillSunFill } from "react-icons/bs";
+import "./toggleTheme.scss";
 
 function ToggleTheme() {
   const [theme, setTheme] = useState("light");
@@ -18,20 +20,17 @@ function ToggleTheme() {
   };
 
   return (
-    <button
-      onClick={toggleTheme}
-      style={{
-        padding: "0.5rem 1rem",
-        fontSize: "1rem",
-        borderRadius: "5px",
-        border: "none",
-        cursor: "pointer",
-        backgroundColor: "var(--btn-bg)",
-        color: "white",
-      }}
-    >
-      {theme === "light" ? "🌙 Dark " : "☀️ Light "}
-    </button>
+    <div className="toggle-switch" onClick={toggleTheme}>
+      <div className={`slider ${theme === "dark" ? "dark" : "light"}`}>
+        <div className="icon">
+          {theme === "dark" ? (
+            <FaMoon size={15} color="#A2AAB0" />
+          ) : (
+            <BsFillSunFill size={15} color="#FDB813" />
+          )}
+        </div>
+      </div>
+    </div>
   );
 }
 

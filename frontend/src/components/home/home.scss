@@ -14,6 +14,8 @@
   --btn-git: #4a90e2;
   --project-card: #002d62;
   --bigBox-shadow: var(--accent-color);
+  --btn-text: white;
+  --btn-text-hover: #002d62;
 }
 
 [data-theme="dark"] {
@@ -30,6 +32,8 @@
   --btn-git: rgb(225, 135, 70);
   --project-card: whitesmoke;
   --bigBox-shadow: rgba(255, 255, 255, 0.3);
+  --btn-text: black;
+  --btn-text-hover: white;
 }
 
 * {
@@ -109,20 +113,19 @@ section {
 // Button css
 .btn-style-landingPage {
   background: var(--btn-bg);
-  color: var(--bg-color);
+  color: var(--btn-text);
   font-size: 1rem;
   padding: 0.5rem 1.5rem;
   border: none;
   border-radius: 5px;
   transition: box-shadow 0.3s ease, transform 0.2s ease;
-}
 
-.btn-style-landingPage:hover {
-  box-shadow: 0 3px 10px var(--navbar-back);
-  color: var(--accent-color);
-  background-color: var(--btn-hover-bg);
-  transform: translateY(-3px);
-  // font-weight: bold;
+  &:hover {
+    box-shadow: 0 3px 10px var(--navbar-back);
+    color: var(--btn-text-hover);
+    background-color: var(--btn-hover-bg);
+    transform: translateY(-3px);
+  }
 }
 
 // Font style

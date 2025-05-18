@@ -45,7 +45,7 @@ const Contact = () => {
           >
             <div className="inquiry-form">
               <Form ref={form} onSubmit={sendEmail}>
-                <p className="fs-5 text-center fw-bolder">Get In Touch!</p>
+                <p className="fs-5 text-center fw-bolder">Let's Connect!</p>
                 <Form.Group
                   className="mb-3"
                   controlId="exampleForm.ControlInput1"
