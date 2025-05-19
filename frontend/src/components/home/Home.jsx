@@ -6,10 +6,16 @@ import Contact from "../contact/Contact";
 import { Button, Col, Container, Image, Row } from "react-bootstrap";
 import "./home.scss";
 import { TypeAnimation } from "react-type-animation";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import {
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaFileDownload,
+} from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import Certificate from "../certificate/Certificate";
 import { ScrollAnimation } from "../scroll/ScrollAnimation";
+import { LuEye } from "react-icons/lu";
 
 const Home = () => {
   const [ref, isVisible] = ScrollAnimation();
@@ -85,15 +91,19 @@ const Home = () => {
                   />
                 </div>
                 <div className="mt-3 d-flex flex-column flex-sm-row gap-3 gap-sm-4">
-                  <div>
-                    <a
-                      href="/Resume_Darshan.pdf"
-                      download="Darshan_Domadiya_Resume.pdf"
-                    >
-                      <Button className="btn-style-landingPage ">
-                        Download Resume
-                      </Button>
-                    </a>
+                  <div className="resume-div">
+                    <div className="d-flex align-items-center justify-content-center gap-2">
+                      RESUME
+                      <a href="./Resume_Darshan.pdf" target="_blank">
+                        <FaFileDownload size={19} className="resume-button" />
+                      </a>
+                      <a
+                        href="https://drive.google.com/file/d/1tcGvK8BebZgyNki3DxwstvMLwEBBDnQ8/view?usp=sharing"
+                        target="_blank"
+                      >
+                        <LuEye size={22} className="resume-button" />
+                      </a>
+                    </div>
                   </div>
                   <div>
                     <Button
