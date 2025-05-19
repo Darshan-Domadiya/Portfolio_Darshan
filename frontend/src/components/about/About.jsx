@@ -1,20 +1,18 @@
-import React, { useState } from "react";
-import {
-  Container,
-  Row,
-  Col,
-  Tab,
-  Tabs,
-  Image,
-  Card,
-  Button,
-} from "react-bootstrap";
+import { useState } from "react";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import "./about.scss";
+import { ScrollAnimation } from "../scroll/ScrollAnimation";
 
 const About = () => {
-  const [key, setKey] = useState("Experience");
+  const [ref, isVisible] = ScrollAnimation();
+
   return (
-    <Container className="section-content">
+    <Container
+      ref={ref}
+      className={`section-content slide-in-container ${
+        isVisible ? "visible" : ""
+      }`}
+    >
       <div className="text-center">
         <p className="text-center fs-1 section-heading">About Me</p>
       </div>

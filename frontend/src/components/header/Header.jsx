@@ -56,7 +56,7 @@ const Header = () => {
   }, []);
 
   return (
-    <Container fluid className="text-center">
+    <Container fluid className="text-center ">
       <Navbar
         collapseOnSelect
         expand="lg"
@@ -67,7 +67,7 @@ const Header = () => {
       >
         <Container className="text-center ">
           <Navbar.Brand href="/" className="navbar-logo">
-            <div className="d-flex align-items-center gap-1 gap-sm-2">
+            <div className="d-flex align-items-center gap-1 gap-sm-2 ">
               <FaCode />
               DAR$HAN
             </div>

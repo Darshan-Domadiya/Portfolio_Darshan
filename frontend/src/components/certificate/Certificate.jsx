@@ -1,11 +1,21 @@
 import { Button, Col, Container, Image, Row } from "react-bootstrap";
 import "./certificate.scss";
+import { ScrollAnimation } from "../scroll/ScrollAnimation";
 
 const Certificate = () => {
+  const [ref, isVisible] = ScrollAnimation();
+
   return (
-    <Container>
+    <Container
+      ref={ref}
+      className={`section-content slide-in-container ${
+        isVisible ? "visible" : ""
+      }`}
+    >
       <div className="text-center">
-        <p className="text-center fs-1 section-heading">Certifications & Achievements</p>
+        <p className="text-center fs-1 section-heading">
+          Certifications & Achievements
+        </p>
       </div>
 
       <Row className="mt-4">
@@ -25,7 +35,7 @@ const Certificate = () => {
               </p>
             </div>
             <div>
-              <Button className="verify-button" >
+              <Button className="verify-button">
                 <a
                   className="verify-link"
                   href="https://www.credly.com/badges/6391d156-2752-4960-a4d3-25d24228de13/public_url"

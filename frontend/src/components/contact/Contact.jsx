@@ -7,9 +7,11 @@ import { FiMail } from "react-icons/fi";
 import { RiPhoneLine } from "react-icons/ri";
 import "./contact.scss";
 import emailjs from "@emailjs/browser";
+import { ScrollAnimation } from "../scroll/ScrollAnimation";
 
 const Contact = () => {
   const form = useRef();
+  const [ref, isVisible] = ScrollAnimation();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -31,7 +33,12 @@ const Contact = () => {
 
   return (
     <>
-      <Container className="d-flex flex-column justify-content-center">
+      <Container
+        ref={ref}
+        className={` d-flex flex-column justify-content-center section-content slide-in-container ${
+          isVisible ? "visible" : ""
+        }`}
+      >
         <div className="text-center">
           <p className="fs-1 section-heading">Contact Me</p>
         </div>

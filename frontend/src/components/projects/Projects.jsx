@@ -1,8 +1,11 @@
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import "./projects.scss";
 import { FaGithub } from "react-icons/fa";
+import { ScrollAnimation } from "../scroll/ScrollAnimation";
 
 const Projects = () => {
+  const [ref, isVisible] = ScrollAnimation();
+
   const projectObject = [
     {
       index: 0,
@@ -66,7 +69,12 @@ const Projects = () => {
   ];
 
   return (
-    <Container className="d-flex align-items-center  flex-column">
+    <Container
+      ref={ref}
+      className={` d-flex align-items-center  flex-column section-content slide-in-container ${
+        isVisible ? "visible" : ""
+      }`}
+    >
       <div className="text-center">
         <p className="section-heading fs-1">Projects</p>
       </div>

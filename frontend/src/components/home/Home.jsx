@@ -6,48 +6,28 @@ import Contact from "../contact/Contact";
 import { Button, Col, Container, Image, Row } from "react-bootstrap";
 import "./home.scss";
 import { TypeAnimation } from "react-type-animation";
-import {
-  FaArrowCircleDown,
-  FaGithub,
-  FaInstagram,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import Certificate from "../certificate/Certificate";
+import { ScrollAnimation } from "../scroll/ScrollAnimation";
 
 const Home = () => {
+  const [ref, isVisible] = ScrollAnimation();
+
   const handleGetStartedClick = () => {
     const aboutSection = document.getElementById("contact");
     aboutSection.scrollIntoView({ behavior: "smooth" });
   };
 
-  useEffect(() => {
-    const sections = document.querySelectorAll(".section");
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target); // Stop observing once it's animated in
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    sections.forEach((section) => observer.observe(section));
-
-    // Cleanup observer when component unmounts
-    return () => {
-      sections.forEach((section) => observer.unobserve(section));
-    };
-  }, []);
-
   return (
     <>
       <section id="home" className="section ubuntu-regular">
-        <Container className="mt-5 landing-page d-flex align-items-center flex-column justify-content-center ">
+        <Container
+          ref={ref}
+          className={` mt-5 landing-page d-flex align-items-center flex-column justify-content-center slide-in-container ${
+            isVisible ? "visible" : ""
+          }`}
+        >
           <Row className="w-100 d-flex align-items-start mt-md-5 row-landingPage">
             <Col
               sm={{ span: 12, order: 1 }}
@@ -121,7 +101,7 @@ const Home = () => {
                       onClick={handleGetStartedClick}
                     >
                       Contact Me
-                    {/*  <FaArrowCircleDown /> */}
+                      {/*  <FaArrowCircleDown /> */}
                     </Button>
                   </div>
                 </div>
@@ -161,7 +141,7 @@ const Home = () => {
         </Container>
       </section>
 
-      <section id="about" className="section  ubuntu-regular">
+      <section id="about" className="section ubuntu-regular">
         <About />
       </section>
       <section id="skills" className="section ubuntu-regular">

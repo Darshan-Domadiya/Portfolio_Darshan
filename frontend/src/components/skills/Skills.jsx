@@ -1,8 +1,11 @@
 import React from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
 import "./skills.scss";
+import { ScrollAnimation } from "../scroll/ScrollAnimation";
 
 const Skills = () => {
+  const [ref, isVisible] = ScrollAnimation();
+
   const skillObject = [
     { index: 0, skillImage: "./html.jpg", skillName: "HTML" },
     { index: 0, skillImage: "./css.png", skillName: "CSS" },
@@ -35,7 +38,12 @@ const Skills = () => {
   ];
 
   return (
-    <Container>
+    <Container
+      ref={ref}
+      className={`section-content slide-in-container ${
+        isVisible ? "visible" : ""
+      }`}
+    >
       <div className="text-center ">
         <h1 className="fs-1 text-center section-heading">Skills</h1>
       </div>
