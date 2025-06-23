@@ -45,7 +45,7 @@ const Home = () => {
               <div className="glass-image-container">
                 <div className="glass-image-frame">
                   <Image
-                    src="./profile_photo.JPG"
+                    src={`${import.meta.env.BASE_URL}profile_photo.JPG`}
                     alt="profile_photo"
                     className="profile-image"
                     height="100%"
