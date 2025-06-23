@@ -130,6 +130,24 @@ section {
   }
 }
 
+// highlighted text(co-op/internship)
+.highlight {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  animation: textColorShift 1.5s ease-in-out infinite;
+}
+
+@keyframes textColorShift {
+  0%,
+  100% {
+    color: var(--project-card);
+  }
+  50% {
+    color: var(--navbar-back);
+  }
+}
+
 // RESUME div.
 .resume-div {
   background: var(--btn-bg);
@@ -176,7 +194,7 @@ section {
 }
 
 .hello-text {
-  font-size: 1.75rem; // Default size
+  font-size: 1.5rem; // Default size
   border-radius: 10px;
   font-size: 3rem;
   font-weight: 400;
@@ -191,7 +209,7 @@ section {
     font-size: 2rem;
   }
   @media screen and (min-width: 1025px) {
-    font-size: 2.75rem;
+    font-size: 2rem;
   }
 }
 
@@ -219,6 +237,29 @@ section {
 }
 
 .type-animation-text {
+  font-weight: 500;
+  @media screen and (min-width: 320px) and (max-width: 376px) {
+    height: 55px;
+    font-size: 1.2rem;
+  }
+
+  @media screen and (min-width: 424px) and (max-width: 766px) {
+    font-size: 1.4rem;
+    height: 60px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1022px) {
+    font-size: 1.6rem;
+    height: 65px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 1.5rem;
+    height: 42px;
+  }
+}
+
+.highlight {
+  font-weight: 500;
   @media screen and (min-width: 320px) and (max-width: 376px) {
     height: 48px;
     font-size: 1.2rem;
@@ -234,8 +275,8 @@ section {
   }
 
   @media screen and (min-width: 1024px) {
-    font-size: 1.6rem;
-    height: 50px;
+    font-size: 1.5rem;
+    height: 42px;
   }
 }
 

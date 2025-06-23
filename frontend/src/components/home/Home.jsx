@@ -63,7 +63,7 @@ const Home = () => {
               className="d-flex align-items-start justify-content-start offset-xl-1 mt-0 mt-md-5"
             >
               <div className="d-flex flex-column">
-                <span className=" hello-text fw-medium">Hi There,</span>
+                <span className=" hello-text fw-medium">Hello There,</span>
                 <span className=" my-name">I{"'"}m Darshan Domadiya</span>
                 <div className="type-animation-text">
                   <TypeAnimation
@@ -90,15 +90,21 @@ const Home = () => {
                     repeat={Infinity}
                   />
                 </div>
+                <div>
+                  <span className="highlight">
+                    Actively Seeking 4-8 months co-op/internship opportunities
+                    commencing Winter 2026.
+                  </span>
+                </div>
                 <div className="mt-3 d-flex flex-column flex-sm-row gap-3 gap-sm-4">
                   <div className="resume-div">
                     <div className="d-flex align-items-center justify-content-center gap-2">
                       RESUME
-                      <a href="./Resume_Darshan.pdf" target="_blank">
+                      <a href="./Darshan-Domadiya(Resume).pdf" target="_blank">
                         <FaFileDownload size={19} className="resume-button" />
                       </a>
                       <a
-                        href="https://drive.google.com/file/d/1tcGvK8BebZgyNki3DxwstvMLwEBBDnQ8/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1dW0bO1DkG2Y7S7C9ZIbyLldUrkhxzGXJ/view?usp=sharing"
                         target="_blank"
                       >
                         <LuEye size={22} className="resume-button" />
