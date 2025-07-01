@@ -68,10 +68,10 @@ const Home = () => {
               md={{ span: 8, order: 2 }}
               lg={7}
               xl={7}
-              className="d-flex justify-content-center px-5 py-5"
+              className="d-flex justify-content-center text-justif px-4 px-md-5 py-md-5"
             >
               <div className="mt-4">
-                <p className="intro-greeting ">👋 Hello, I’m</p>
+                <span className="intro-greeting">👋 Hello, I’m</span>
                 <h1 className=" fw-bold main-name">Darshan Domadiya</h1>
 
                 <div className="typewriter-text ">
@@ -99,24 +99,20 @@ const Home = () => {
                       wrapper="span"
                       speed={40}
                       repeat={Infinity}
-                      style={{
-                        fontSize: "1.2rem",
-                        fontWeight: 500,
-                        color: "#5e17eb",
-                      }}
+                      className="typeAnimation-text"
                     />
                   </p>
                   <p className="p-text">
                     {"'"}A curious individual eager to work and learn in a team
                     environment to deliver high-quality software products.{"'"}
                   </p>
-                  <p className="availability-text mt-2 mb-4">
-                    📌 <strong>Actively seeking</strong> 4–8 month Internship
+                  <p className="availability-text mb-4">
+                    📌 Actively seeking 4–8 month Internship
                     opportunities starting <strong>Winter 2026</strong>.
                   </p>
                 </div>
 
-                <div className="d-flex flex-wrap gap-3 mb-4">
+                <div className="d-flex gap-3 mb-4">
                   <a
                     href="./Darshan-Domadiya(Resume).pdf"
                     target="_blank"
@@ -124,6 +120,7 @@ const Home = () => {
                   >
                     <FaFileDownload /> Resume
                   </a>
+
                   <Button
                     className="btn contact-btn d-flex align-items-center gap-2"
                     onClick={handleGetStartedClick}

@@ -30,7 +30,7 @@ const Certificate = () => {
               </div>
             </div>
             <div>
-              <p className="fs-4">
+              <p className="fs-4 skill-heading">
                 AWS Certified : Cloud Practitioner Foundational
               </p>
             </div>

@@ -12,6 +12,10 @@
   width: 100%;
 }
 
+.skill-heading{
+  color: var(--resume-button);
+}
+
 .skill-div::before {
   content: "";
   position: absolute;

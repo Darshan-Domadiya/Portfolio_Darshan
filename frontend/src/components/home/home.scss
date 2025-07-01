@@ -17,6 +17,9 @@
   --btn-text: white;
   --btn-text-hover: #002d62;
   --resume-button: #3d7eaa;
+  --availability-text: whitesmoke;
+  --bg-gradient-start: #00c9ff;
+  --bg-gradient-end: #92fe9d;
 }
 
 [data-theme="dark"] {
@@ -36,6 +39,9 @@
   --btn-text: black;
   --btn-text-hover: white;
   --resume-button: whitesmoke;
+  --availability-text: whitesmoke;
+  --bg-gradient-start: #f6d365;
+  --bg-gradient-end: #fda085;
 }
 
 * {
@@ -180,33 +186,11 @@ section {
   //   margin-top: 94px;
 }
 
-.round-image-div {
-  height: auto;
-  width: 100%;
-}
-
 //////////////////////////////////////// Media queries /////////////////////////////////////
 
 .row-landingPage {
   @media screen and (min-width: 320px) {
     margin-top: 80px;
-  }
-}
-
-.hello-text {
-  font-size: 1.5rem; // Default size
-
-  @media screen and (min-width: 320px) {
-    font-size: 1.25rem;
-  }
-  @media screen and (min-width: 424px) {
-    font-size: 1.75rem;
-  }
-  @media screen and (min-width: 768px) {
-    font-size: 1.5rem;
-  }
-  @media screen and (min-width: 1025px) {
-    font-size: 1.5rem;
   }
 }
 
@@ -237,7 +221,11 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(circle at top left, #00c9ff, #92fe9d);
+  background: radial-gradient(
+    circle at top left,
+    var(--bg-gradient-start),
+    var(--bg-gradient-end)
+  );
   padding: 10px;
   border-radius: 50%;
   animation: morph 6s ease-in-out infinite;
@@ -273,88 +261,183 @@ section {
   object-fit: cover;
 }
 
+// hello greeting css and media queries
 .intro-greeting {
   font-size: 1rem;
   font-weight: 500;
-  color: #6c757d;
+  color: lightslategray;
   letter-spacing: 0.5px;
+
+  @media screen and (min-width: 320px) {
+    font-size: 0.75rem;
+  }
+  @media screen and (min-width: 425px) {
+    font-size: 1.1rem;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 1.5rem;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 1.1rem;
+    padding-left: 20px;
+  }
 }
 
 .main-name {
-  // font-size: 2.8rem;
-  color: #212529;
+  color: var(--heading-color);
   font-weight: 700;
 
   @media screen and (min-width: 320px) {
-    font-size: 1.6rem;
+    font-size: 1.55rem;
   }
-  @media screen and (min-width: 376px) {
+  @media screen and (min-width: 375px) {
     font-size: 1.8rem;
   }
   @media screen and (min-width: 425px) {
     font-size: 2rem;
   }
   @media screen and (min-width: 768px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
-  @media screen and (min-width: 1022px) and (max-width: 1200px) {
-    font-size: 3rem;
-  }
-  @media screen and (min-width: 1439px) {
-    font-size: 3.25rem;
+  @media screen and (min-width: 1024px) {
+    font-size: 2.8rem;
+    padding-left: 20px;
   }
 }
 
 .typewriter-text {
-  font-size: 1.2rem;
   font-weight: 500;
-  color: #6f42c1;
+  color: var(--navbar-back);
   max-width: 100%;
   width: 100%;
+  @media screen and (min-width: 320px) {
+    font-size: 1.2rem;
+  }
+  @media screen and (min-width: 375px) {
+    font-size: 1.25rem;
+  }
+  @media screen and (min-width: 425px) {
+    font-size: 1.4rem;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 1rem;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 1.3rem;
+    padding-left: 22px;
+  }
+}
+
+.typeAnimation-text {
+  margin-left: 29px;
+  color: var(--btn-git);
+  @media screen and (min-width: 320px) {
+    font-size: 1.1rem;
+  }
+  @media screen and (min-width: 375px) {
+    font-size: 1.2rem;
+  }
+  @media screen and (min-width: 425px) {
+    font-size: 1.3rem;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 2rem;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 1.3rem;
+  }
+}
+
+.p-text {
+  color: #888;
+  font-weight: light;
+  line-height: 1.5;
+  max-width: 100%;
+  width: 100%;
+
+  @media screen and (min-width: 320px) {
+    font-size: 0.9rem;
+  }
+  @media screen and (min-width: 375px) {
+    font-size: 1rem;
+  }
+  @media screen and (min-width: 425px) {
+    font-size: 1rem;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 2rem;
+  }
+  @media screen and (min-width: 1022px) {
+    font-size: 1.15rem;
+  }
+}
+
+.availability-text {
+  color: var(--resume-button);
+
+  @media screen and (min-width: 320px) {
+    font-size: 1rem;
+  }
+  @media screen and (min-width: 375px) {
+    font-size: 1.2rem;
+  }
+  @media screen and (min-width: 425px) {
+    font-size: 1rem;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 1rem;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 1.3rem;
+  }
 }
 
 .resume-btn {
   background: transparent;
-  border: 2px solid #6f42c1;
-  color: #6f42c1;
-  padding: 0.6rem 1.2rem;
+  border: 2px solid var(--btn-bg);
+  color: var(--btn-bg);
   border-radius: 8px;
   font-weight: 500;
   transition: all 0.3s ease;
+
+  @media screen and (min-width: 425px) {
+    padding: 0.6rem 1rem;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-left: 20px;
+  }
 }
 
 .resume-btn:hover {
-  background: #6f42c1;
-  color: white;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  &:active {
+    background: var(--btn-bg);
+    color: var(--btn-text);
+  }
 }
 
 .contact-btn {
-  background-color: #5e17eb;
-  color: white;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
   font-weight: 500;
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
   border: none;
-  transition: background 0.3s ease;
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: var(--btn-hover-bg);
+    color: var(--btn-hover-color);
+  }
+
+  &:active {
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+  }
 }
 
-.contact-btn:hover {
-  background-color: #4b14c6;
-}
-
-.type-animation_text {
-  margin-left: 50px;
-}
-
-.p-text {
-  font-size: 1rem;
-  color: #333;
-  line-height: 1.5;
-  max-width: 100%;
-  width: 100%;
-}
-
-// cursor arrow css
+// Cursor ripple effect
 .ripple {
   position: fixed;
   width: 20px;

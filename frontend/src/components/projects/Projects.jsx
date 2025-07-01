@@ -10,13 +10,13 @@ const Projects = () => {
     {
       index: 0,
       cardImage: "./homeImage-1.png",
-      cardTitle: " e-Cart(E-Commerce website)",
+      cardTitle: " E-Cart(E-Commerce website)",
       cardText: `A fully API integrated and responsive e-commerce website which includes various functionalities such as user login and authentication, various pages such as product detail page, product listing page, checkout page, cart page using React Js.`,
       projectLink:
         "https://github.com/Darshan-Domadiya/e-Cart-online-shopping-website-",
       demoLink:
         "https://drive.google.com/file/d/1Pw_GuCEmVg6paArUuOuXdVAGMM4eFqMd/view?usp=sharing",
-      TechStack: "HTML, SCSS, React Js, Postman, REST Api, React Bootstrap,",
+      TechStack: " React Js, Postman, REST Api, React Bootstrap,",
     },
 
     {
@@ -68,14 +68,7 @@ const Projects = () => {
       <Row className="mt-4">
         {projectObject.map((project, index) => (
           <Col sm={12} md={6} lg={6} xl={4} className="mb-4" key={index}>
-            <Card
-            // style={{
-            //   width: "100%",
-            //   borderRadius: "10px",
-            //   boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-            //   cursor: "pointer",
-            // }}
-            >
+            <Card>
               <Card.Img
                 variant="top"
                 src={project.cardImage}
@@ -83,7 +76,7 @@ const Projects = () => {
                 style={{ borderRadius: "10px 10px 0 0" }}
               />
               <Card.Body>
-                <Card.Title className="text-center">
+                <Card.Title className="text-center project-name">
                   {project.cardTitle}
                 </Card.Title>
                 <Card.Text style={{ textAlign: "justify" }}>

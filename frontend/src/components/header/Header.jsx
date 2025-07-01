@@ -87,8 +87,10 @@ const Header = () => {
                   </Nav.Link>
                 )
               )}
+              <div className="d-flex align-items-center justify-content-center">
+                <ToggleTheme />
+              </div>
             </Nav>
-            <ToggleTheme />
           </Navbar.Collapse>
         </Container>
       </Navbar>

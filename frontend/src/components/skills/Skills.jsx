@@ -50,8 +50,9 @@ const Skills = () => {
       </div>
 
       <Row className="mt-4">
-        <Col sm={12} md={6} lg={4} xl={4} className="border-end">
-          <p className="fs-3 text-center">Programming Languages</p>
+        <Col sm={12} md={6} lg={4} xl={4} className="position-relative">
+         <div className="d-none d-md-block border-end position-absolute top-0 bottom-0 end-0" />
+          <p className="fs-3 text-center ">Programming Languages</p>
 
           <Row className="mt-3">
             {skillObject.map((skill) => (
@@ -64,15 +65,19 @@ const Skills = () => {
                     src={skill.skillImage}
                     className="object-fit-cover img-fluid skill-image mb-1"
                   />
-                  <p className="text-center mt-1">{skill.skillName}</p>
+                  <p className="text-center mt-1 skill-heading">
+                    {skill.skillName}
+                  </p>
                 </div>
               </Col>
             ))}
           </Row>
         </Col>
 
-        <Col sm={12} md={6} lg={4} xl={4} className="mt-5 mt-sm-0 border-end">
-          <p className="text-center fs-3">Frameworks</p>
+        <Col sm={12} md={6} lg={4} xl={4} className="mt-5 mt-sm-0 position-relative">
+                 <div className="d-none d-md-block border-end position-absolute top-0 bottom-0 end-0" />
+
+          <p className="text-center fs-3 ">Frameworks</p>
 
           <Row>
             {skillObject2.map((skill) => (
@@ -85,7 +90,7 @@ const Skills = () => {
                     src={skill.skillImage}
                     className="object-fit-cover img-fluid skill-image mb-2"
                   />
-                  <span>{skill.skillName}</span>
+                  <span className="skill-heading">{skill.skillName}</span>
                 </div>
               </Col>
             ))}
@@ -93,7 +98,7 @@ const Skills = () => {
         </Col>
 
         <Col sm={12} md={6} lg={4} xl={4} className="mt-4 mt-lg-0">
-          <p className="text-center fs-3">Databse & Software Tools</p>
+          <p className="text-center fs-3 ">Databse & Software Tools</p>
 
           <Row>
             {softwareTools.map((tool) => (
@@ -106,7 +111,7 @@ const Skills = () => {
                     src={tool.toolImage}
                     className="object-fit-cover img-fluid skill-image mb-2"
                   />
-                  <span>{tool.toolName}</span>
+                  <span className="skill-heading">{tool.toolName}</span>
                 </div>
               </Col>
             ))}

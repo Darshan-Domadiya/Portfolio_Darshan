@@ -1,45 +1,16 @@
-.about-image {
-  height: auto;
-  width: 100%;
-}
-
-//Tabs css.
-.custom-tabs .nav-link {
-  color: #003366;
-  font-weight: 500; /* Optional: make it slightly bolder */
-  transition: color 0.5s ease; /* Smooth transition for hover */
-
-  /* Hover effect */
-  &:hover {
-    color: darkcyan;
-  }
-}
-
-// custom card border
-.custom-border {
-  border: 1px solid var(--text-color);
-}
-
-/* Active tab styling */
-.custom-tabs .nav-link.active {
-  font-weight: medium;
-}
-
 // about section CSS
 
 /* Main Timeline Section */
+
 .timeline-section {
-  margin: 4rem 0;
   position: relative;
-  padding-left: 2rem;
-  border-left: 3px solid var(--text-color);
 }
 
 .section-title {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 2rem;
-  color: var(--text-color);
+  // 
+  color: var(--resume-button);
   position: relative;
 }
 
@@ -47,20 +18,20 @@
 .timeline-item {
   position: relative;
   margin-bottom: 3rem;
-  padding-left: 2rem;
 }
 
 /* Vertical line (already handled via border-left on parent) */
+/* Timeline vertical line */
 .timeline-line {
   position: absolute;
   left: -3px;
-  top: 0;
   height: 100%;
-  width: 3px;
-  background-color: #0dcaf0;
+  width: 4px;
+  color: var(--btn-git); // or another visible color
+  border-left: solid var(--btn-git);
 }
 
-/* Dot on the line */
+/* Dot on the vertical timeline */
 .timeline-dot {
   position: absolute;
   left: -42px;
@@ -81,7 +52,7 @@
 .timeline-title {
   font-size: 1.2rem;
   font-weight: 600;
-  color: var(--resume-button);
+  color: var(--text-color);
 }
 
 .timeline-date {
@@ -93,7 +64,7 @@
 .timeline-location {
   font-size: 0.9rem;
   font-style: italic;
-  color: #555;
+  color: #888;
 }
 
 /* Timeline Content */
@@ -105,26 +76,125 @@
 .timeline-content li {
   list-style-type: disc;
   margin-bottom: 0.6rem;
-  color: #333;
+  color: var(--project-card);
   font-size: 0.95rem;
   line-height: 1.5;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .timeline-section {
-    padding-left: 1rem;
+
+@media (min-width: 320px) {
+  .timeline-dot {
+    left: 0px;
+    top: -5px;
+  }
+  .timeline-line {
+    left: 9px;
   }
 
   .timeline-item {
-    padding-left: 1.5rem;
-  }
-
-  .timeline-dot {
-    left: -10px;
+    padding-left: 2rem;
   }
 
   .timeline-title {
     font-size: 1.1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.75rem;
+    margin-top: 1.5rem;
+  }
+
+  
+}
+
+@media (min-width: 375px) {
+  .timeline-dot {
+    left: 0px;
+    top: -5px;
+  }
+  .timeline-line {
+    left: 9px;
+  }
+
+  .timeline-item {
+    padding-left: 2rem;
+  }
+
+  .timeline-title {
+    font-size: 1.1rem;
+  }
+
+  .section-title{
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 425px) {
+  .timeline-dot {
+    left: 0px;
+    top: -5px;
+  }
+  .timeline-line {
+    left: 9px;
+  }
+
+  .timeline-item {
+    padding-left: 2rem;
+  }
+
+  .timeline-title {
+    font-size: 1.1rem;
+    
+  }
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 1.25rem;
+  }
+
+  .timeline-dot {
+    left: 0px;
+    top: -5px;
+  }
+  .timeline-line {
+    left: 9px;
+  }
+
+  .timeline-item {
+    padding-left: 2rem;
+  }
+
+  .timeline-title {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .timeline-dot {
+    left: 0px;
+    top: -5px;
+  }
+  .timeline-line {
+    left: 9px;
+  }
+
+  .timeline-item {
+    padding-left: 2rem;
+  }
+
+  .timeline-title {
+    font-size: 1.2rem;
+  }
+
+  .timeline-section {
+    margin: 3rem 0;
   }
 }
