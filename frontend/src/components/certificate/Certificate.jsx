@@ -24,7 +24,7 @@ const Certificate = () => {
             <div>
               <div className="aws-banner-div">
                 <Image
-                  src="aws.png"
+                  src="aws-2.png"
                   className="object-fit-cover img-fluid aws-banner-image"
                 />
               </div>

@@ -177,9 +177,8 @@ const Contact = () => {
       <Container fluid className="border-top footer-container">
         <Row>
           <div className="d-flex gap-1 justify-content-center mt-5 flex-wrap ">
-            <span>&copy; 2025 Darshan Domadiya.</span>
             <span className="footer-text">
-              ✨ Built with passion by Darshan Domadiya
+              Built with passion✨ by Darshan Domadiya
             </span>
           </div>
         </Row>

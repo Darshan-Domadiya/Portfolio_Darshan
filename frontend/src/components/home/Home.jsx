@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import About from "../about/About";
 import Skills from "../skills/Skills";
 import Projects from "../projects/Projects";
@@ -6,16 +5,10 @@ import Contact from "../contact/Contact";
 import { Button, Col, Container, Image, Row } from "react-bootstrap";
 import "./home.scss";
 import { TypeAnimation } from "react-type-animation";
-import {
-  FaGithub,
-  FaInstagram,
-  FaLinkedin,
-  FaFileDownload,
-} from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
+import { FaFileDownload } from "react-icons/fa";
 import Certificate from "../certificate/Certificate";
 import { ScrollAnimation } from "../scroll/ScrollAnimation";
-import { LuEye } from "react-icons/lu";
+import { useEffect, useState } from "react";
 
 const Home = () => {
   const [ref, isVisible] = ScrollAnimation();
@@ -25,8 +18,23 @@ const Home = () => {
     aboutSection.scrollIntoView({ behavior: "smooth" });
   };
 
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      const ripple = document.createElement("div");
+      ripple.className = "ripple";
+      ripple.style.left = `${e.clientX}px`;
+      ripple.style.top = `${e.clientY}px`;
+      document.body.appendChild(ripple);
+      setTimeout(() => ripple.remove(), 800);
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+
   return (
     <>
+      <div className="hex-grid-bg" />
       <section id="home" className="section ubuntu-regular">
         <Container
           ref={ref}
@@ -34,13 +42,13 @@ const Home = () => {
             isVisible ? "visible" : ""
           }`}
         >
-          <Row className="w-100 d-flex align-items-start mt-md-5 row-landingPage">
+          <Row className=" d-flex align-items-start mt-md-5 row-landingPage">
             <Col
               sm={{ span: 12, order: 1 }}
-              md={{ span: 4, order: 2 }}
+              md={{ span: 4, order: 1 }}
               lg={5}
-              xl={4}
-              className="d-flex align-items-center justify-content-center mb-4 mt-4"
+              xl={5}
+              className="d-flex align-items-center justify-content-center mb-md-4 mt-md-4"
             >
               <div className="glass-image-container">
                 <div className="glass-image-frame">
@@ -57,106 +65,77 @@ const Home = () => {
 
             <Col
               sm={{ span: 12, order: 2 }}
-              md={{ span: 8, order: 1 }}
+              md={{ span: 8, order: 2 }}
               lg={7}
               xl={7}
-              className="d-flex align-items-start justify-content-start offset-xl-1 mt-0 mt-md-5"
+              className="d-flex justify-content-center px-5 py-5"
             >
-              <div className="d-flex flex-column">
-                <span className=" hello-text fw-medium">Hello There,</span>
-                <span className=" my-name">I{"'"}m Darshan Domadiya</span>
-                <div className="type-animation-text">
-                  <TypeAnimation
-                    sequence={[
-                      "My expertise in Front End Development",
-                      1000,
-                      "My expertise in Back End Development",
-                      1000,
-                      "My expertise in Full Stack Development ",
-                      1000,
-                      "My expertise in Responsive Web Design ",
-                      1000,
-                      "My expertise in API Development ",
-                      1000,
-                      "My expertise in AWS cloud ",
-                      1000,
-                    ]}
-                    wrapper="span"
-                    speed={50}
-                    style={{
-                      display: "inline-block",
-                      // boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
-                    }}
-                    repeat={Infinity}
-                  />
+              <div className="mt-4">
+                <p className="intro-greeting ">👋 Hello, I’m</p>
+                <h1 className=" fw-bold main-name">Darshan Domadiya</h1>
+
+                <div className="typewriter-text ">
+                  <span>I{"'"}m Proficient in, </span>
+                  <p className="type-animation_text">
+                    <TypeAnimation
+                      sequence={[
+                        "Front End Development",
+                        1200,
+                        "Back End Development",
+                        1200,
+                        "Full Stack Development",
+                        1200,
+                        "Responsive Web Design",
+                        1200,
+                        1200,
+                        "Software Development",
+                        1200,
+                        1200,
+                        "API Development",
+                        1200,
+                        "AWS cloud services ☁️",
+                        1200,
+                      ]}
+                      wrapper="span"
+                      speed={40}
+                      repeat={Infinity}
+                      style={{
+                        fontSize: "1.2rem",
+                        fontWeight: 500,
+                        color: "#5e17eb",
+                      }}
+                    />
+                  </p>
+                  <p className="p-text">
+                    {"'"}A curious individual eager to work and learn in a team
+                    environment to deliver high-quality software products.{"'"}
+                  </p>
+                  <p className="availability-text mt-2 mb-4">
+                    📌 <strong>Actively seeking</strong> 4–8 month Internship
+                    opportunities starting <strong>Winter 2026</strong>.
+                  </p>
                 </div>
-                <div>
-                  <span className="highlight">
-                    Actively Seeking 4-8 months co-op/internship opportunities
-                    commencing Winter 2026.
-                  </span>
-                </div>
-                <div className="mt-3 d-flex flex-column flex-sm-row gap-3 gap-sm-4">
-                  <div className="resume-div">
-                    <div className="d-flex align-items-center justify-content-center gap-2">
-                      RESUME
-                      <a href="./Darshan-Domadiya(Resume).pdf" target="_blank">
-                        <FaFileDownload size={19} className="resume-button" />
-                      </a>
-                      <a
-                        href="https://drive.google.com/file/d/1dW0bO1DkG2Y7S7C9ZIbyLldUrkhxzGXJ/view?usp=sharing"
-                        target="_blank"
-                      >
-                        <LuEye size={22} className="resume-button" />
-                      </a>
-                    </div>
-                  </div>
-                  <div>
-                    <Button
-                      className="btn-style-landingPage d-flex align-items-center gap-2"
-                      onClick={handleGetStartedClick}
-                    >
-                      Contact Me
-                      {/*  <FaArrowCircleDown /> */}
-                    </Button>
-                  </div>
-                </div>
-                <div className="mt-4 gap-3 fw-semibold d-flex align-items-center ">
+
+                <div className="d-flex flex-wrap gap-3 mb-4">
                   <a
-                    href="https://www.instagram.com/_i_m_darshan_23/"
+                    href="./Darshan-Domadiya(Resume).pdf"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    className="btn resume-btn d-flex align-items-center gap-2"
                   >
-                    <FaInstagram size={30} className="fa-style" />
+                    <FaFileDownload /> Resume
                   </a>
-                  <a
-                    href="https://github.com/Darshan-Domadiya"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Button
+                    className="btn contact-btn d-flex align-items-center gap-2"
+                    onClick={handleGetStartedClick}
                   >
-                    <FaGithub size={30} className="fa-style" />
-                  </a>
-                  <a
-                    href="https://leetcode.com/u/Darshan_Domadiya23/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <SiLeetcode size={30} className="fa-style" />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/domadiya-darshan/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaLinkedin size={30} className="fa-style" />
-                  </a>
+                    Let’s Connect
+                  </Button>
                 </div>
               </div>
             </Col>
           </Row>
         </Container>
       </section>
-
       <section id="about" className="section ubuntu-regular">
         <About />
       </section>
@@ -166,7 +145,6 @@ const Home = () => {
       <section id="certificate" className="section ubuntu-regular">
         <Certificate />
       </section>
-
       <section id="projects" className="section ubuntu-regular">
         <Projects />
       </section>

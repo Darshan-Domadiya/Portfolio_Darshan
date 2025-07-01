@@ -32,12 +32,12 @@ const Projects = () => {
     },
     {
       index: 2,
-      cardImage: "./portfolio.png",
-      cardTitle: "Portfolio Website",
-      cardText: `Built with ReactJs portfolio showcases my skills and experience as a software developer and proficiency in, responsive design, and animation effects. This project reflects a commitment to creating user-friendly and visually appealing applications. `,
-      projectLink: "https://github.com/Darshan-Domadiya/portfolio",
+      cardImage: "./chatMate.png",
+      cardTitle: "ChatMate",
+      cardText: `ChatMate is a real-time chat app built with the MERN stack and Socket.IO, enabling instant one-on-one and group messaging with features like typing indicators and online status. It offers a responsive UI and efficient backend for a smooth, interactive chat experience.`,
+      projectLink: "https://github.com/Darshan-Domadiya/ChatMate",
       demoLink: "",
-      TechStack: "React Js, MongoDB, React Bootstrap, EmailJs",
+      TechStack: "React Js, Express, Node Js, MongoDB, Socket.io, MUI, Zustand",
     },
     {
       index: 3,
@@ -52,15 +52,6 @@ const Projects = () => {
         "https://drive.google.com/file/d/1OHMFBLHGNvLYx8F5MF57U5zNW7KM7jsc/view?usp=sharing",
       TechStack:
         "React Js, Express, Node Js, MongoDB, Firebase, React Bootstrap, Redux Toolkit",
-    },
-    {
-      index: 4,
-      cardImage: "./chatMate.png",
-      cardTitle: "ChatMate",
-      cardText: `ChatMate is a real-time chat app built with the MERN stack and Socket.IO, enabling instant one-on-one and group messaging with features like typing indicators and online status. It offers a responsive UI and efficient backend for a smooth, interactive chat experience.`,
-      projectLink: "https://github.com/Darshan-Domadiya/ChatMate",
-      demoLink: "",
-      TechStack: "React Js, Express, Node Js, MongoDB, Socket.io, MUI, Zustand",
     },
   ];
 
