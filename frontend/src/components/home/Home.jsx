@@ -75,7 +75,7 @@ const Home = () => {
                 <h1 className=" fw-bold main-name">Darshan Domadiya</h1>
 
                 <div className="typewriter-text ">
-                  <span>I{"'"}m Proficient in, </span>
+                  <span>My expertise in, </span>
                   <p className="type-animation_text">
                     <TypeAnimation
                       sequence={[
@@ -103,8 +103,8 @@ const Home = () => {
                     />
                   </p>
                   <p className="p-text">
-                    {"'"}A curious individual eager to work and learn in a team
-                    environment to deliver high-quality software products.{"'"}
+                    A curious individual eager to work and learn in a team
+                    environment to deliver high-quality software products.
                   </p>
                   <p className="availability-text mb-4">
                     📌 Actively seeking 4–8 month Internship

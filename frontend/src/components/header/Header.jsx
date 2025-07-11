@@ -59,11 +59,10 @@ const Header = () => {
     <Container fluid className="text-center ">
       <Navbar
         collapseOnSelect
-        expand="lg"
         fixed="top"
         className={`custom-navbar ${
           isVisible ? "visible" : "hidden"
-        } mx-4 mx-md-5`}
+        } `}
       >
         <Container className="text-center ">
           <Navbar.Brand href="/" className="navbar-logo">

@@ -133,7 +133,7 @@ const About = () => {
             <div className="timeline-content">
               <ul>
                 <li>
-                  Technologies: ReactJs, Next Js ,Node Js, Redux, REST APIs,
+                  Technologies: ReactJs, Next Js, Node Js, Redux, REST APIs,
                   SQL, MongoDB, Postman
                 </li>
                 <li>
@@ -145,9 +145,8 @@ const About = () => {
                   experience across all screen sizes.
                 </li>
                 <li>
-                  Developed and tested RESTful APIs in Postman which{" "}
-                  <strong>resolved 70% </strong>of post-production issues
-                  through early-stage debugging.
+                  Developed and tested RESTful APIs in Postman which resolved
+                  70% of post-production issues through early-stage debugging.
                 </li>
                 <li>
                   Contributed in daily stand-up meetings with cross-functional

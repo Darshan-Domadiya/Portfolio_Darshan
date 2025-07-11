@@ -8,6 +8,7 @@ import { RiPhoneLine } from "react-icons/ri";
 import "./contact.scss";
 import emailjs from "@emailjs/browser";
 import { ScrollAnimation } from "../scroll/ScrollAnimation";
+import { HiOutlineMail } from "react-icons/hi";
 
 const Contact = () => {
   const form = useRef();
@@ -60,7 +61,7 @@ const Contact = () => {
                   <Form.Control
                     className="bg-secondary-subtle  p-2 border-3"
                     type="name"
-                    placeholder="Enter your Name"
+                    placeholder="Enter your name"
                     autoComplete="off"
                     name="user_name"
                     required
@@ -73,7 +74,7 @@ const Contact = () => {
                   <Form.Control
                     className="bg-secondary-subtle p-2 border-3"
                     type="email"
-                    placeholder="Enter your Email"
+                    placeholder="Enter your email"
                     autoComplete="off"
                     name="user_email"
                     required
@@ -87,7 +88,7 @@ const Contact = () => {
                     type="text"
                     name="message"
                     className="bg-secondary-subtle p-2 border-3"
-                    placeholder="Enter your Message"
+                    placeholder="Enter your message"
                     as="textarea"
                     rows={4}
                     required
@@ -140,36 +141,30 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="mt-4 d-flex align-items-center mx-2 mx-sm-4 mx-xl-5 mt-5 gap-3">
-              <a
-                href="https://github.com/Darshan-Domadiya"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGithub size={30} className="fa-style" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/domadiya-darshan/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedin size={30} className="fa-style" />
-              </a>
-              <a
-                href="https://leetcode.com/u/Darshan_Domadiya23/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <SiLeetcode size={30} className="fa-style" />
-              </a>
-
-              <a
-                href="https://www.instagram.com/_i_m_darshan_23/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaInstagram size={30} className="fa-style" />
-              </a>
+            <div className="mt-4 d-flex align-items-center mx-2 mx-sm-4 mx-xl-5 mt-5 ">
+              <div className="mx-2 d-flex align-items-center gap-4">
+                <a
+                  href="https://github.com/Darshan-Domadiya"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub size={30} className="fa-style" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/domadiya-darshan/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin size={30} className="fa-style" />
+                </a>
+                <a
+                  href="https://leetcode.com/u/Darshan_Domadiya23/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SiLeetcode size={30} className="fa-style" />
+                </a>
+              </div>
             </div>
           </Col>
         </Row>

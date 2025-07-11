@@ -6,17 +6,17 @@
   z-index: 1000;
   top: 0;
   padding: 8px;
-  margin-top: 25px;
+  // margin-top: 25px;
   transition: transform 0.3s ease-in-out; // Smooth transition for hiding/showing
-  border-radius: 30px;
+  // border-radius: 30px;
 
-  &.hidden {
-    transform: translateY(-140%); // Hide the navbar by moving it up
-  }
+  // &.hidden {
+  //   transform: translateY(-140%); // Hide the navbar by moving it up
+  // }
 
-  &.visible {
-    transform: translateY(0); // Show the navbar
-  }
+  // &.visible {
+  //   transform: translateY(0); // Show the navbar
+  // }
 }
 
 .custom-navbar .nav-link {
@@ -36,6 +36,7 @@
   color: #0d6efd; /* Professional blue color */
   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
   cursor: pointer; /* Make it interactive */
+  margin-left: 10px;
 }
 
 .navbar-logo:hover {

@@ -437,26 +437,3 @@ section {
   }
 }
 
-// Cursor ripple effect
-.ripple {
-  position: fixed;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: rgba(94, 23, 235, 0.4);
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  animation: rippleExpand 0.8s ease-out forwards;
-  z-index: 9999;
-}
-
-@keyframes rippleExpand {
-  0% {
-    opacity: 0.6;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(4);
-  }
-}
