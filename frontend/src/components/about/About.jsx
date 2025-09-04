@@ -39,9 +39,9 @@ const About = () => {
             </div>
             <div className="timeline-content">
               <ul>
-                <li>Current CGPA: 86/100</li>
+                <li> GPA: 84/100</li>
                 <li>
-                  Available for a 4-8 month internship starting January 2026
+                  Available for a 4-8 month internship starting Winter 2026
                 </li>
                 <li>
                   Major Courses: Advanced Software Engineering, Advanced
@@ -106,18 +106,12 @@ const About = () => {
                   to support dynamic, scalable backend services.
                 </li>
                 <li>
-                  Implemented exception handling, validation, and response
-                  formatting in APIs to ensure consistent and user-friendly
-                  error messages.
-                </li>
-                <li>
-                  Utilized GitHub for version control, managing code
-                  repositories, and coordinating with the team to ensure smooth
-                  collaboration and integration of code changes.
+                  Designed secure API endpoints with proper input validation.
                 </li>
               </ul>
             </div>
           </div>
+
           {/*Experience Section */}
 
           <div className="timeline-item">
@@ -146,7 +140,7 @@ const About = () => {
                 </li>
                 <li>
                   Developed and tested RESTful APIs in Postman which resolved
-                  70% of post-production issues through early-stage debugging.
+                  post-production issues through early-stage debugging.
                 </li>
                 <li>
                   Contributed in daily stand-up meetings with cross-functional

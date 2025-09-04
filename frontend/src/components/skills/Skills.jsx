@@ -7,35 +7,35 @@ const Skills = () => {
   const [ref, isVisible] = ScrollAnimation();
 
   const skillObject = [
-    { index: 0, skillImage: "./java.png", skillName: "JAVA" },
-    { index: 0, skillImage: "./python.png", skillName: "PYTHON" },
-    { index: 0, skillImage: "./javascript.jpg", skillName: "JAVASCRIPT" },
-    { index: 0, skillImage: "./typescript.jpg", skillName: "TYPESCRIPT" },
+    { index: 0, skillImage: "./java.png", skillName: "Java" },
+    { index: 0, skillImage: "./python.png", skillName: "Python" },
+    { index: 0, skillImage: "./javascript.jpg", skillName: "JavaScript" },
+    { index: 0, skillImage: "./typescript.jpg", skillName: "TypeScript" },
     { index: 0, skillImage: "./c.png", skillName: "C" },
     { index: 0, skillImage: "./c-plus.png", skillName: "C++" },
   ];
 
   const skillObject2 = [
-    { index: 0, skillImage: "./react.png", skillName: "REACT JS" },
-    { index: 0, skillImage: "./nodejs.webp", skillName: "NODE JS" },
-    { index: 0, skillImage: "./nextjs.webp", skillName: "NEXT JS" },
-    { index: 0, skillImage: "./express.png", skillName: "EXPRESS" },
-    { index: 0, skillImage: "./tailwind.jpg", skillName: "TAILWINDCSS" },
-    { index: 0, skillImage: "./redux.jpg", skillName: "REDUX" },
-    { index: 0, skillImage: "./materialui.jpg", skillName: "MATERIAL UI" },
-    { index: 0, skillImage: "./bootstrap.jpg", skillName: "BOOTSTRAP" },
+    { index: 0, skillImage: "./react.png", skillName: "React Js" },
+    { index: 0, skillImage: "./nodejs.webp", skillName: "Node Js" },
+    { index: 0, skillImage: "./nextjs.webp", skillName: "Next Js" },
+    { index: 0, skillImage: "./express.png", skillName: "Express" },
+    { index: 0, skillImage: "./tailwind.jpg", skillName: "TailwindCss" },
+    { index: 0, skillImage: "./redux.jpg", skillName: "Redux" },
+    { index: 0, skillImage: "./materialui.jpg", skillName: "Material UI" },
+    { index: 0, skillImage: "./bootstrap.jpg", skillName: "Bootstrap" },
   ];
 
   const softwareTools = [
-    { index: 0, toolImage: "./mysql.png", toolName: "MYSQL" },
-    { index: 0, toolImage: "./mongodb.png", toolName: "MONGODB" },
-    { index: 0, toolImage: "./postman.png", toolName: "POSTMAN" },
-    { index: 0, toolImage: "./github.png", toolName: "GITHUB" },
-    { index: 0, toolImage: "./vscode.png", toolName: "VS CODE" },
-    { index: 0, toolImage: "./intellijidea.jpg", toolName: "INTELLIJIDEA" },
+    { index: 0, toolImage: "./mysql.png", toolName: "MySQL" },
+    { index: 0, toolImage: "./mongodb.png", toolName: "MongoDB" },
+    { index: 0, toolImage: "./postman.png", toolName: "Postman" },
+    { index: 0, toolImage: "./github.png", toolName: "GitHub" },
+    { index: 0, toolImage: "./vscode.png", toolName: "VS Code" },
+    { index: 0, toolImage: "./intellijidea.jpg", toolName: "IntellijIdea" },
     { index: 0, toolImage: "./aws.png", toolName: "AWS" },
-    { index: 0, toolImage: "./jira.png", toolName: "JIRA" },
-    { index: 0, toolImage: "./linux.png", toolName: "LINUX" },
+    { index: 0, toolImage: "./jira.png", toolName: "Jira" },
+    { index: 0, toolImage: "./linux.png", toolName: "Linux" },
   ];
 
   return (

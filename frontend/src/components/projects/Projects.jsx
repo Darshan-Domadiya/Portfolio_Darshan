@@ -53,6 +53,31 @@ const Projects = () => {
       TechStack:
         "React Js, Express, Node Js, MongoDB, Firebase, React Bootstrap, Redux Toolkit",
     },
+    {
+      index: 4,
+      cardImage: "./linux_project.png",
+      cardTitle: "Distributed File System",
+      cardText: `Built a distributed file system with four servers, enabling file routing by type, background transfers, and support for upload, download, delete, list, and tar archive operations.`,
+      projectLink:
+        "https://github.com/Darshan-Domadiya/Distributed_File_System-Socket_Programming",
+      demoLink:
+        "https://drive.google.com/file/d/1OHMFBLHGNvLYx8F5MF57U5zNW7KM7jsc/view?usp=sharing",
+      TechStack: "C, Socket Programming, Linux/UNIX, System Calls, TCP/IP",
+    },
+    {
+      index: 5,
+      cardImage: "./custom_shell.png",
+      cardTitle: "MyShell",
+      cardText: `Built a custom Unix-like shell with support for built-in commands, piping, redirection, and background job
+execution. Implemented process forking, signal handling, and command parsing from scratch to deepen systems
+programming skills.`,
+      projectLink:
+        "https://github.com/Darshan-Domadiya/MyShell-Custom-Terminal-",
+      demoLink:
+        "https://drive.google.com/file/d/1OHMFBLHGNvLYx8F5MF57U5zNW7KM7jsc/view?usp=sharing",
+      TechStack:
+        "Linux programming, System Programming, Linux, System Calls, File I/O",
+    },
   ];
 
   return (
@@ -89,17 +114,8 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Button className="w-100 btn-style-landingPage">
+                    <Button className=" btn-style-landingPage">
                       View Project
-                    </Button>
-                  </a>
-                  <a
-                    href={project.demoLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button className="w-100 mt-2 mt-sm-0 btn-style-landingPage">
-                      View Demo
                     </Button>
                   </a>
                 </div>

@@ -60,12 +60,10 @@ const Header = () => {
       <Navbar
         collapseOnSelect
         fixed="top"
-        className={`custom-navbar ${
-          isVisible ? "visible" : "hidden"
-        } `}
+        className={`custom-navbar ${isVisible ? "visible" : "hidden"} `}
       >
         <Container className="text-center ">
-          <Navbar.Brand href="/" className="navbar-logo">
+          <Navbar.Brand href="/Portfolio_Darshan/" className="navbar-logo">
             <div className="d-flex align-items-center gap-1 gap-sm-2 ">
               <FaCode />
               DAR$HAN

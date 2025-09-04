@@ -75,7 +75,7 @@ const Home = () => {
                 <h1 className=" fw-bold main-name">Darshan Domadiya</h1>
 
                 <div className="typewriter-text ">
-                  <span>My expertise in, </span>
+                  <span>My expertise is in, </span>
                   <p className="type-animation_text">
                     <TypeAnimation
                       sequence={[
@@ -107,14 +107,14 @@ const Home = () => {
                     environment to deliver high-quality software products.
                   </p>
                   <p className="availability-text mb-4">
-                    📌 Actively seeking 4–8 month Internship
-                    opportunities starting <strong>Winter 2026</strong>.
+                    📌 Actively seeking 4–8 month Internship opportunities
+                    starting <strong>Winter 2026</strong>.
                   </p>
                 </div>
 
                 <div className="d-flex gap-3 mb-4">
                   <a
-                    href="./Darshan-Domadiya(Resume).pdf"
+                    href="./Darshan_Domadiya_Resume.pdf"
                     target="_blank"
                     className="btn resume-btn d-flex align-items-center gap-2"
                   >
