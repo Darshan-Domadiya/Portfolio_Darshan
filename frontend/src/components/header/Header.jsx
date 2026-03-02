@@ -66,7 +66,7 @@ const Header = () => {
           <Navbar.Brand href="/Portfolio_Darshan/" className="navbar-logo">
             <div className="d-flex align-items-center gap-1 gap-sm-2 ">
               <FaCode />
-              DAR$HAN
+              DARSHAN
             </div>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

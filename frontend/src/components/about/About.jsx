@@ -32,10 +32,10 @@ const About = () => {
             <div className="timeline-dot"></div>
             <div className="timeline-header">
               <h3 className="timeline-title">Master's in Applied Computing</h3>
-              <div className="timeline-date">Jan 2025 - Present</div>
               <div className="timeline-location">
                 University of Windsor • Windsor, ON
               </div>
+              <div className="timeline-date">Jan 2025 - Aug 2026</div>
             </div>
             <div className="timeline-content">
               <ul>
@@ -58,10 +58,10 @@ const About = () => {
               <h3 className="timeline-title">
                 Bachelor of Information Technology
               </h3>
-              <div className="timeline-date">Aug 2020 - Jun 2024</div>
               <div className="timeline-location">
                 AIT - Gujarat Technological University
               </div>
+              <div className="timeline-date">Aug 2020 - Jun 2024</div>
             </div>
             <div className="timeline-content">
               <ul>
@@ -88,25 +88,33 @@ const About = () => {
             <div className="timeline-line"></div>
             <div className="timeline-dot"></div>
             <div className="timeline-header">
-              <h3 className="timeline-title">Web Developer Intern</h3>
-              <div className="timeline-date">Jul 2024 - Aug 2024</div>
+              <h3 className="timeline-title">UX Developer Intern</h3>
               <div className="timeline-location">
-                DigiGlobe Solutions Pvt. Ltd. • Ahmedabad, India - Remote
+                Nokia - Remote
               </div>
+              <div className="timeline-date">Jan 2026 - Aug 2026</div>
             </div>
             <div className="timeline-content">
               <ul>
                 <li>
-                  Technologies: Java, Spring Boot, Maven, JSP, SQL, JIRA, Git,
-                  GitHub
+                Tech: React, Node, JavaScript, TypeScript, Cursor, JEST, Jenkins, Linux, Git, Github
                 </li>
 
                 <li>
-                  Developed and deployed RESTful APIs using Java and Spring Boot
-                  to support dynamic, scalable backend services.
+                Migrated legacy UI components to the NDS (Nokia Design System) Connect theme, ensuring alignment with
+                updated design standards and improving visual consistency across applications.
                 </li>
                 <li>
-                  Designed secure API endpoints with proper input validation.
+                Improved component rendering performance by 25% by optimizing React hooks usage, memoization strategies,
+                and reducing unnecessary re-renders across shared UI modules.
+                </li>
+                <li>
+                Leveraged AI-assisted development tools (e.g. Cursor) to accelerate debugging and fixing UI/UX defects,
+                reducing production issues and improving overall product stability across React Components.
+                </li>
+                <li>
+                Reduced bundle size by 18% through dependency cleanup, tree-shaking optimization, and removal of
+                deprecated libraries during NDS Connect migration.
                 </li>
               </ul>
             </div>
@@ -119,65 +127,38 @@ const About = () => {
             <div className="timeline-dot"></div>
             <div className="timeline-header">
               <h3 className="timeline-title">Software Developer Intern</h3>
-              <div className="timeline-date">Jan 2024 - Jun 2024</div>
               <div className="timeline-location">
                 Concetto Labs Pvt. Ltd. • Ahmedabad, India
               </div>
+              <div className="timeline-date">Jan 2024 - Jun 2024</div>
             </div>
             <div className="timeline-content">
               <ul>
                 <li>
-                  Technologies: ReactJs, Next Js, Node Js, Redux, REST APIs,
+                  Tech: ReactJs, Next Js, Node Js, Redux, REST APIs,
                   SQL, MongoDB, Postman
                 </li>
                 <li>
-                  Developed a comprehensive API integrated E-Cart project and
-                  gained hands-on experience in Full Stack Development.
+                Designed and developed scalable Front-end components for customer focused web applications using React,
+                Node.js, and TypeScript and optimized User interfaces.
                 </li>
                 <li>
                   Implemented flexible UI design to ensure a smooth user
                   experience across all screen sizes.
                 </li>
                 <li>
-                  Developed and tested RESTful APIs in Postman which resolved
+                  Developed and tested RESTful APIs in Postman which resolved almost 30%
                   post-production issues through early-stage debugging.
                 </li>
                 <li>
-                  Contributed in daily stand-up meetings with cross-functional
-                  teams for project updates, code refactoring, optimizing and
-                  problem solving.
+                Participated in a cross-functional team to gather requirements, conduct design reviews, code reviews and deliver
+                customer-facing features and demonstrated excellent problem-solving skills.
                 </li>
+
               </ul>
             </div>
           </div>
-          <div className="timeline-item">
-            <div className="timeline-line"></div>
-            <div className="timeline-dot"></div>
-            <div className="timeline-header">
-              <h3 className="timeline-title">ReactJs Intern</h3>
-              <div className="timeline-date">Jul 2023 - Sep 2023</div>
-              <div className="timeline-location">
-                Stypix Pvt. Ltd • Ahmedabad, India
-              </div>
-            </div>
-            <div className="timeline-content">
-              <ul>
-                <li>
-                  Technologies: JavaScript, HTML, CSS, Bootstrap, Frontend
-                  Development
-                </li>
-                <li>
-                  Successfully completed a hands-on project during internship,
-                  acquired experience in front-end development.
-                </li>
-                <li>
-                  {" "}
-                  Gained hands-on experience in writing clean, maintainable code
-                  by applying best practices in code structuring.
-                </li>
-              </ul>
-            </div>
-          </div>
+         
         </Col>
       </Row>
     </Container>

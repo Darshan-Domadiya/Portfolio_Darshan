@@ -121,7 +121,7 @@ const Contact = () => {
                   style={{ margin: "0 10px", cursor: "pointer" }}
                 />
 
-                <span>Windsor, Ontario, Canada</span>
+                <span>London, Ontario, Canada</span>
               </div>
 
               <div className="d-flex align-items-center">
@@ -129,7 +129,7 @@ const Contact = () => {
                   size={30}
                   style={{ margin: "0 10px", cursor: "pointer" }}
                 />
-                <span>darshandomadiya3525@gmail.com</span>
+                <span>darshandomadiya2026@gmail.com</span>
               </div>
 
               <div className="d-flex align-items-center">

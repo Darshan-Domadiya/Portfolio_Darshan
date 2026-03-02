@@ -106,9 +106,12 @@ const Home = () => {
                     A curious individual eager to work and learn in a team
                     environment to deliver high-quality software products.
                   </p>
-                  <p className="availability-text mb-4">
+                  {/* <p className="availability-text mb-4">
                     📌 Actively seeking 4–8 month Internship opportunities
                     starting <strong>Winter 2026</strong>.
+                  </p> */}
+                  <p className="availability-text mb-4">
+                    🎯 UX Developer Intern at <strong>Nokia</strong>
                   </p>
                 </div>
 
