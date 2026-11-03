@@ -121,7 +121,7 @@ const Contact = () => {
                   style={{ margin: "0 10px", cursor: "pointer" }}
                 />
 
-                <span>London, Ontario, Canada</span>
+                <span> Canada</span>
               </div>
 
               <div className="d-flex align-items-center">
