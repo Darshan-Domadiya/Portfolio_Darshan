@@ -93,7 +93,9 @@ const Home = () => {
                         1200,
                         "API Development",
                         1200,
-                        "AWS cloud services ☁️",
+                        "Cloud services ☁️",
+                        1200,
+                        "Docker and CI/CD practices",
                         1200,
                       ]}
                       wrapper="span"
@@ -102,16 +104,18 @@ const Home = () => {
                       className="typeAnimation-text"
                     />
                   </p>
-                  <p className="p-text">
+                  {/*<p className="p-text">
                     A curious individual eager to work and learn in a team
                     environment to deliver high-quality software products.
                   </p>
-                  {/* <p className="availability-text mb-4">
-                    📌 Actively seeking 4–8 month Internship opportunities
-                    starting <strong>Winter 2026</strong>.
-                  </p> */}
+                  */}
+                  <p className="p-text mb-4">
+                    📌 Actively seeking Full-Time opportunities in Software
+                    Development, Full-Stack Engineering, and related roles
+                    across Canada.
+                  </p>
                   <p className="availability-text mb-4">
-                    🎯 UX Developer Intern at <strong>Nokia</strong>
+                    🎯 Former Software Engineer Intern at <strong>Nokia</strong>
                   </p>
                 </div>
 

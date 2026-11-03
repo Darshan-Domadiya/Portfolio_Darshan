@@ -10,7 +10,7 @@ const Projects = () => {
     {
       index: 0,
       cardImage: "./homeImage-1.png",
-      cardTitle: " E-Cart(E-Commerce website)",
+      cardTitle: " BargainFox",
       cardText: `A fully API integrated and responsive e-commerce website which includes various functionalities such as user login and authentication, various pages such as product detail page, product listing page, checkout page, cart page using React Js.`,
       projectLink:
         "https://github.com/Darshan-Domadiya/e-Cart-online-shopping-website-",
@@ -22,7 +22,7 @@ const Projects = () => {
     {
       index: 1,
       cardImage: "./realEstate.png",
-      cardTitle: "Real Estate Website",
+      cardTitle: "AvenueRealtor",
       cardText: `This project highlights expertise in building dynamic full-stack applications with React.js, Node.js, Express.js, and MongoDB. It combines advanced functionality, scalability, and security to deliver a modern solution for real estate management.`,
       projectLink: "https://github.com/Darshan-Domadiya/Real-Estate_MERN",
       demoLink:

@@ -39,10 +39,7 @@ const About = () => {
             </div>
             <div className="timeline-content">
               <ul>
-                <li> GPA: 84/100</li>
-                <li>
-                  Available for a 4-8 month internship starting Winter 2026
-                </li>
+                <li> GPA: 86/100</li>
                 <li>
                   Major Courses: Advanced Software Engineering, Advanced
                   Computing Concepts, Advanced Database Topics
@@ -88,33 +85,44 @@ const About = () => {
             <div className="timeline-line"></div>
             <div className="timeline-dot"></div>
             <div className="timeline-header">
-              <h3 className="timeline-title">UX Developer Intern</h3>
-              <div className="timeline-location">
-                Nokia - Remote
-              </div>
+              <h3 className="timeline-title">
+                Software Engineer Intern (Co-op)
+              </h3>
+              <div className="timeline-location">Nokia - Remote</div>
               <div className="timeline-date">Jan 2026 - Aug 2026</div>
             </div>
             <div className="timeline-content">
               <ul>
                 <li>
-                Tech: React, Node, JavaScript, TypeScript, Cursor, JEST, Jenkins, Linux, Git, Github
+                  Tech: React, JavaScript, TypeScript, Node.js, Git, Figma,
+                  Jenkins, JIRA, Cursor
+                </li>
+                <li>
+                  Improved React component rendering performance by 30% through
+                  optimized hooks, memoization, and reduced unnecessary
+                  re-renders across shared TypeScript UI modules.
                 </li>
 
                 <li>
-                Migrated legacy UI components to the NDS (Nokia Design System) Connect theme, ensuring alignment with
-                updated design standards and improving visual consistency across applications.
+                  Achieved a 98% system test success rate by resolving UI
+                  defects, validating component integrations, and supporting
+                  end-to-end testing within an Agile SDLC.{" "}
                 </li>
                 <li>
-                Improved component rendering performance by 25% by optimizing React hooks usage, memoization strategies,
-                and reducing unnecessary re-renders across shared UI modules.
+                  Leveraged Cursor (AI-assisted development tool) to accelerate
+                  UI/UX defect resolution by 50%, improving development
+                  efficiency, software quality, and reliability.
                 </li>
                 <li>
-                Leveraged AI-assisted development tools (e.g. Cursor) to accelerate debugging and fixing UI/UX defects,
-                reducing production issues and improving overall product stability across React Components.
+                  Reduced application bundle size by 25% through dependency
+                  cleanup, optimization, and removal of deprecated components
+                  and libraries during the NDS Connect migration.
                 </li>
                 <li>
-                Reduced bundle size by 18% through dependency cleanup, tree-shaking optimization, and removal of
-                deprecated libraries during NDS Connect migration.
+                  {" "}
+                  Migrated and validated 75+ React/TypeScript components to NDS
+                  Connect, achieving 100% migration accuracy while maintaining
+                  component functionality and design-system consistency.
                 </li>
               </ul>
             </div>
@@ -135,30 +143,33 @@ const About = () => {
             <div className="timeline-content">
               <ul>
                 <li>
-                  Tech: ReactJs, Next Js, Node Js, Redux, REST APIs,
-                  SQL, MongoDB, Postman
+                  Tech: ReactJs, Next Js, Node Js, Redux, REST APIs, SQL,
+                  MongoDB, Postman
                 </li>
                 <li>
-                Designed and developed scalable Front-end components for customer focused web applications using React,
-                Node.js, and TypeScript and optimized User interfaces.
+                  Developed scalable frontend solutions for web applications
+                  using React and Redux to manage complex application states and
+                  optimize user interfaces.
                 </li>
                 <li>
-                  Implemented flexible UI design to ensure a smooth user
-                  experience across all screen sizes.
+                  Implemented flexible Responsive UI design to ensure a smooth
+                  user experience across all screen sizes.
                 </li>
                 <li>
-                  Developed and tested RESTful APIs in Postman which resolved almost 30%
-                  post-production issues through early-stage debugging.
+                  Designed, developed, and integrated REST APIs using Spring
+                  Boot and Node.js and resolved 70% of post-production backend
+                  issues utilizing Postman, improving backend services
+                  reliability.
                 </li>
                 <li>
-                Participated in a cross-functional team to gather requirements, conduct design reviews, code reviews and deliver
-                customer-facing features and demonstrated excellent problem-solving skills.
+                  Participated in a cross-functional team to gather
+                  requirements, conduct design reviews, code reviews and deliver
+                  customer-facing features and demonstrated excellent
+                  problem-solving skills.
                 </li>
-
               </ul>
             </div>
           </div>
-         
         </Col>
       </Row>
     </Container>

@@ -28,7 +28,7 @@ const Contact = () => {
         },
         (error) => {
           console.log("FAILED...", error.text);
-        }
+        },
       );
   };
 
@@ -158,7 +158,7 @@ const Contact = () => {
                   <FaLinkedin size={30} className="fa-style" />
                 </a>
                 <a
-                  href="https://leetcode.com/u/Darshan_Domadiya23/"
+                  href="https://leetcode.com/u/Darshan_Mission_2026/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -172,9 +172,7 @@ const Contact = () => {
       <Container fluid className="border-top footer-container">
         <Row>
           <div className="d-flex gap-1 justify-content-center mt-5 flex-wrap ">
-            <span className="footer-text">
-              Built with passion✨ by Darshan Domadiya
-            </span>
+            <span className="footer-text">Built with passion✨ by Darshan</span>
           </div>
         </Row>
       </Container>
